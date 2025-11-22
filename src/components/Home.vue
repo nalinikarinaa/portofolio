@@ -378,6 +378,17 @@ import Flipcard from './Flipcard.vue'
 </div> -->
 
  </section>
+
+ <section id="sertificate">
+  <div class="mt-20 text-center items-center">
+    <span class="text-center font-playfair text-2xl text-pinkk">SERTIFICATE</span>
+  </div>
+  
+  <!-- swipper -->
+<MySwiper />
+
+
+ </section>
  
 
  <section id="contact">
@@ -535,6 +546,8 @@ import Dropdown from './DetailsDropdown.vue';
 import Footer from './Footer.vue';
 import Header from './Header.vue';
 import PopUp from './PopUp.vue';
+
+ import MySwiper from './MySwiper.vue'
 // import Flipcard from './Flipcard.vue'
 
 // import slider1 from '../assets/img/msib.jpg';
@@ -552,8 +565,11 @@ export default {
     Header,
     Flipcard,
     Dropdown,
-    Footer
+    Footer,
+    MySwiper
+
   },
+ 
 
   data() {
     return {
