@@ -15,10 +15,27 @@
 >
 
     <swiper-slide>
-      <div class="mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10 ">
-        <img src="../assets/img/simapres2.svg" class="w-full h-full object-cover inset-0 bg-cream bg-opacity-50  " />
+      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
+
+        <!-- Foto -->
+        <img 
+          src="../assets/img/simapres2.svg" 
+          class="w-full h-full object-cover" 
+        />
+
+        <!-- Overlay cream -->
+        <div class="absolute inset-0 bg-cream/50">
+          <div class="text-center items-center mt-9 md:mt-24">
+            <h1 class="text-base md:text-2xl"> judul </h1>
+              <button @click="openPopup('popup3')"class="cursor-pointer mt-2 md:mt-5 px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink text-cream font-poppins rounded-full transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                more
+              </button>
+          </div>
+        </div>
+
       </div>
     </swiper-slide>
+
 
     <swiper-slide>
       <div class="mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
@@ -38,32 +55,61 @@
       </div>
     </swiper-slide>
   </swiper>
+
+                   <!-- POPUP SIMAPRES -->
+                  <div class="text-xl font-poppins font-normal">
+                     <PopUp :visible="activePopup === 'popup3'" @close="closePopup">
+                     <h2 class="text-sm">SIMAPRES</h2>
+                       <p class="mt-4 text-xs">
+                         SIMAPRES Project Base Learning (PBL) is a web-based application platform that aims to display and edit high-achieving student data, and make it easier to submit and validate achievements. And in this project there are 2 actors, user and admin, each user has a different role.<br><br>
+                         As a Back-End Developer on the SIMAPRES Learning Base Project is a very valuable experience for me. I am in charge of planning and developing servers, designing and managing database structures that are efficient and according to needs, building and developing Back-End using PHP Native, 
+                         and developing and integrating features.</p>
+                     <div class="items-center justify-center flex mt-8"><img src="../assets/img/simapres2.svg" class=" items-center w-full h-auto"> </div>
+                     </PopUp>
+                 </div>
 </template>
 
 <script>
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/vue';
 
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import 'swiper/css/scrollbar'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import PopUp from './PopUp.vue'
 
 export default {
   name: 'MySwiper',
-  components: { Swiper, SwiperSlide },
-  setup() {
-    const onSwiper = (swiper) => console.log("Swiper instance:", swiper)
-    const onSlideChange = () => console.log("Slide changed!")
+  components: { Swiper, SwiperSlide, PopUp, },
 
+  data() {
     return {
-      onSwiper,
-      onSlideChange,
-      modules: [Navigation, Pagination, Scrollbar, A11y]
-    }
-  }
-}
+      activePopup: null,
+      modules: [Navigation, Pagination, Scrollbar, A11y],
+    };
+  },
+
+  methods: {
+    onSwiper(swiper) {
+      console.log("Swiper instance:", swiper);
+    },
+
+    onSlideChange() {
+      console.log("Slide changed!");
+    },
+
+    openPopup(popup) {
+      this.activePopup = popup;
+    },
+
+    closePopup() {
+      this.activePopup = null;
+    },
+  },
+};
 </script>
+
 
 <style scoped>
 .swiper-pagination {
