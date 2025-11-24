@@ -563,7 +563,6 @@ export default {
   components: {
     PopUp,
     Header,
-    Flipcard,
     Dropdown,
     Footer,
     MySwiper
