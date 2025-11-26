@@ -102,6 +102,28 @@
 
       </div>
     </swiper-slide>
+
+    <swiper-slide>
+      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
+
+        <!-- Foto -->
+        <img 
+          src="../assets/img/slider5.png" 
+          class="w-full h-full object-cover" 
+        />
+
+        <!-- Overlay cream -->
+        <div class="absolute inset-0 bg-cream/30">
+          <div class="text-center items-center mt-9 md:mt-24">
+            <!-- <h1 class="text-base md:text-2xl"> judul </h1> -->
+              <button @click="openPopup('popup3')"class="cursor-pointer mt-14 md:mt-24 px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink text-cream font-poppins rounded-full transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                more
+              </button>
+          </div>
+        </div>
+
+      </div>
+    </swiper-slide>
   </swiper>
 
                    <!-- POPUP SIMAPRES -->
