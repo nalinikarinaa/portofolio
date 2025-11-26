@@ -190,7 +190,7 @@ import Flipcard from './Flipcard.vue'
 
  <section id="project">
 
-  <div class="relative h-screen bg-fixed bg-cover bg-center mt-20" style="background-image: url('/src/assets/img/sertiff.svg'); height: 40vh;">
+  <div class="relative h-screen bg-fixed bg-cover bg-center mt-20" style="background-image: url('@/assets/img/sertiff.svg'); height: 40vh;">
                 <!-- Layer overlay hitam yang bergerak saat di-scroll -->
                 <div class="absolute inset-0 bg-cream bg-opacity-50 flex items-center justify-center">
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-16 text-center">
