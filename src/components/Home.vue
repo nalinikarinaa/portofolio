@@ -380,8 +380,8 @@ import Flipcard from './Flipcard.vue'
  </section>
 
  <section id="sertificate">
-  <div class="mt-20 text-center items-center">
-    <span class="text-center font-playfair text-2xl text-pinkk">SERTIFICATE</span>
+  <div class="mt-20 text-center items-center mb-10">
+    <span class="text-center font-playfair md:text-4xl text-pinkk">SERTIFICATE</span>
   </div>
   
   <!-- swipper -->
