@@ -4,23 +4,16 @@ import Dropdown from './DetailsDropdown.vue'
 import Footer from './Footer.vue'
 import Header from './Header.vue'
 import PopUp from './PopUp.vue'
-import Flipcard from './Flipcard.vue'
-
-// import slider1 from '../assets/img/bakingclass.jpg';
-// import slider2 from '../assets/img/cookingclass.jpg';
-// import slider3 from '../assets/img/flowerclass.jpg';
-// import slider4 from '../assets/img/potteryclayclass.jpg';
-// import slider5 from '../assets/img/cakedekor.jpg';
-// import slider6 from '../assets/img/craftingclass.jpg';
 </script>
  
 <template>
   <!-- Menambahkan komponen Header di sini -->
+<Header
+  :isSidebarOpen="isSidebarOpen"
+  @toggle="handleToggleSidebar"
+/>
 
-  <Header 
-    :is-sidebar-open="isSidebarOpen"
-    @toggle="handleToggleSidebar"
-  /> 
+ 
   
   <div id="porto">
     <div class="!bg-pink">
@@ -86,7 +79,7 @@ import Flipcard from './Flipcard.vue'
          experience running several projects. Trained in using several
          programming languages such as PHP, HTML, Javascript and SQL database,
          and experienced in building websites using several frameworks such as
-         Laravel, Bootstrap, and Tailwind CSS.
+         Vue,js, Laravel, Bootstrap, and Tailwind CSS.
        </p>
      </div>
    </div>
@@ -190,7 +183,11 @@ import Flipcard from './Flipcard.vue'
 
  <section id="project">
 
-  <div class="relative h-screen bg-fixed bg-cover bg-center mt-20" style="background-image: url('@/assets/img/sertiff.svg'); height: 40vh;">
+<div
+  class="relative bg-fixed bg-cover bg-center mt-20"
+  style="background-image: url('/sertiff.svg'); height: 40vh;"
+>
+
                 <!-- Layer overlay hitam yang bergerak saat di-scroll -->
                 <div class="absolute inset-0 bg-cream bg-opacity-50 flex items-center justify-center">
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-16 text-center">
@@ -224,9 +221,63 @@ import Flipcard from './Flipcard.vue'
  </div> -->
 
  <div class="flex flex-col md:grid md:grid-cols-2 anim-project px-10 gap-20">
- <div class="flex justify-center anim-project">
+
+
+ <div class="flex justify-center mt-5 anim-project">
      <div class="bg-pinkmuda translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
-         <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full anim-project">
+         <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full">
+             <!-- Konten 1 -->
+             <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
+                 <img src="../assets/img/washnjoy.svg" class="w-45 h-45 anim-project">
+             </div>
+
+             <!-- Konten 2 -->
+             <div class="md:text-3xl text-lg font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
+                 <p>Admission Web <br> Weekendplan </p>
+                 <button @click="openPopup('popup6')"class="cursor-pointer mt-5  px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                     more
+                 </button>
+                 <button @click="openLink('https://github.com/nalinikarinaa/washnjoy')" class="cursor-pointer mt-5  px-4 w-fit h-fit flex items-center justify-center text-lg bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                     <img src="../assets/img/github2.svg" 
+                     class="mr-2 cursor-pointer w-5"
+                     @click="openLink('https://github.com/nalinikarinaa/washnjoy')"
+                    alt="projectwashnjoy"><p class="md:text-lg text-sm">github</p>
+                 </button>
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+  <div class="flex justify-center mt-5 anim-project">
+     <div class="bg-pinkmuda translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
+         <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full">
+             <!-- Konten 1 -->
+             <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
+                 <img src="../assets/img/washnjoy.svg" class="w-45 h-45 anim-project">
+             </div>
+
+             <!-- Konten 2 -->
+             <div class="md:text-3xl text-lg font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
+                 <p>Project Manajemen Web </p>
+                 <button @click="openPopup('popup7')"class="cursor-pointer mt-5  px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                     more
+                 </button>
+                 <button @click="openLink('https://github.com/nalinikarinaa/washnjoy')" class="cursor-pointer mt-5  px-4 w-fit h-fit flex items-center justify-center text-lg bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                     <img src="../assets/img/github2.svg" 
+                     class="mr-2 cursor-pointer w-5"
+                     @click="openLink('https://github.com/nalinikarinaa/washnjoy')"
+                    alt="projectwashnjoy"><p class="md:text-lg text-sm">github</p>
+                 </button>
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+  <div class="flex justify-center mt-5 anim-project">
+     <div class="bg-pinkmuda translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
+         <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full">
              <!-- Konten 1 -->
              <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
                  <img src="../assets/img/simapres.svg" class="w-45 h-45 anim-project">
@@ -259,7 +310,7 @@ import Flipcard from './Flipcard.vue'
              </div>
 
              <!-- Konten 2 -->
-             <div class="md:text-3xl text-lg font-bold px-16 md:justify-center text-pink font-poppins md:w-80">
+             <div class="md:text-3xl text-lg font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
                  <p>WashNJoy <br> E-Laundry</p>
                  <button @click="openPopup('popup2')"class="cursor-pointer mt-5  px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      more
@@ -285,7 +336,7 @@ import Flipcard from './Flipcard.vue'
              </div>
 
              <!-- Konten 2 -->
-             <div class="md:text-3xl text-lg font-bold px-16 md:justify-center text-pink font-poppins md:w-80">
+             <div class="md:text-3xl text-lg font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
                  <p>UI/UX WashNJoy</p>
                  <button @click="openPopup('popup4')"class="cursor-pointer mt-5  px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      more
@@ -338,44 +389,6 @@ import Flipcard from './Flipcard.vue'
      </div>
 
  </div>
-
- <!-- SERTIFIKAT -->
-<!-- <div class="w-full mt-20">
-   <div class="w-full mt-20">
-    <div class="grid grid-cols-3">
-      <Flipcard
-        v-for="(item, index) in projects"
-        :key="index"
-        :image="item.image"
-        :title="item.title"
-        :backText="item.backText"
-        @openFlip="openFlip(item)"  
-      />
-    </div> -->
-
-    <!-- Popup flipcard-->
-    <!-- <div
-      v-if="showFlipPopup"
-      class="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
-    >
-      <div class="bg-white p-6 rounded-lg shadow-xl max-w-lg w-full relative">
-        <button
-          class="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
-          @click="closeFlipPopup"
-        >
-          ✕
-        </button>
-        <h2 class="text-xl font-bold mb-4">{{ selectedFlip?.title }}</h2>
-        <img
-          v-if="selectedFlip?.image"
-          :src="selectedFlip.image"
-          class="w-full h-48 object-cover rounded-md mb-4"
-        />
-        <p>{{ selectedFlip?.backText }}</p>
-      </div>
-    </div> -->
-  <!-- </div>
-</div> -->
 
  </section>
 
@@ -473,69 +486,33 @@ import Flipcard from './Flipcard.vue'
                      </PopUp>
                  </div>
 
+                 <!-- POPUP WEEKENDPLAN -->
+                 <div class="text-xl font-poppins font-normal">
+                     <PopUp :visible="activePopup === 'popup6'" @close="closePopup">
+                     <h2 class="text-sm">WashNJoy E-Laundry</h2>
+                       <p class="mt-4 text-xs">
+                         Becoming a Fullstack Developer on the WashNJoy E-Laundry project was a very valuable experience for me. I worked on this project starting from designing the user interface (UI), designing and building the Front-End using HTML and Tailwind CSS, designing and managing the database structure using SQL, building and developing the Back-End using the Laravel Framework and Laravel Breeze for the sign up feature so that can connect to the user's email, and test the code created to ensure there are no bugs or errors.</p>
+                     <div class="items-center justify-center flex mt-8"><img src="../assets/img/washnjoy2.svg" class=" items-center w-full h-auto"> </div>
+                     </PopUp>
+                 </div>
+
+                <!-- POPUP WEB MANAGEMENT -->
+                 <div class="text-xl font-poppins font-normal">
+                     <PopUp :visible="activePopup === 'popup7'" @close="closePopup">
+                     <h2 class="text-sm">WashNJoy E-Laundry</h2>
+                       <p class="mt-4 text-xs">
+                         Becoming a Fullstack Developer on the WashNJoy E-Laundry project was a very valuable experience for me. I worked on this project starting from designing the user interface (UI), designing and building the Front-End using HTML and Tailwind CSS, designing and managing the database structure using SQL, building and developing the Back-End using the Laravel Framework and Laravel Breeze for the sign up feature so that can connect to the user's email, and test the code created to ensure there are no bugs or errors.</p>
+                     <div class="items-center justify-center flex mt-8"><img src="../assets/img/washnjoy2.svg" class=" items-center w-full h-auto"> </div>
+                     </PopUp>
+                 </div>
+
  </section>
    </div>
    </div>
    </div>
 
-
-
   </template>
 
-  <style scoped>
- .title {
-   font-family: 'Playfair Display', serif;
-   font-weight: 600; /* Optional: menyesuaikan berat font */
- }
-
- .content {
-   font-family: 'Poppins', sans-serif;
-   font-weight: 400; /* Optional: menyesuaikan berat font */
- }
-
- .animate-fade-in {
-   animation: fade-in 2s ease-out forwards;
- }
- .animate-slide-down {
-   animation: slide-down 2s ease-out forwards;
- }
- .animate-slide-up {
-   animation: slide-up 2s ease-out forwards;
- }
- .animate-fade-in-right {
-   animation: fade-in-right 2s ease-out forwards;
- }
-
- @keyframes fade-in {
-   from { opacity: 0; transform: translateY(2.5rem) scale(0.95); } /* 2.5rem = translate-y-10 */
-   to { opacity: 1; transform: translateY(2.5rem) scale(1); }
- }
-
- @keyframes slide-down {
-   from { opacity: 0; transform: translateY(-10px); }
-   to { opacity: 1; transform: translateY(0); }
- }
- @keyframes slide-up {
-   from { opacity: 0; transform: translateY(10px); }
-   to { opacity: 1; transform: translateY(0); }
- }
- @keyframes fade-in-right {
-   from { opacity: 0; transform: translateX(20px); }
-   to { opacity: 1; transform: translateX(0); }
- }
- .fade-in {
-   opacity: 0;
-   transform: translateY(20px);
-   transition: all 0.8s ease-out;
- }
-
- .fade-in.show {
-   opacity: 1;
-   transform: translateY(0);
- }
-
-
- </style>
 
 <script>
 import { ref } from 'vue'
@@ -548,16 +525,9 @@ import Header from './Header.vue';
 import PopUp from './PopUp.vue';
 
  import MySwiper from './MySwiper.vue'
-// import Flipcard from './Flipcard.vue'
-
-// import slider1 from '../assets/img/msib.jpg';
-// import slider2 from '../assets/img/msib.jpg';
-// import slider3 from '../assets/img/msib.jpg';
-// import slider4 from '../assets/img/msib.jpg';
-// import slider5 from '../assets/img/msib.jpg';
-// import slider6 from '../assets/img/msib.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
+
 
 export default {
   components: {
@@ -572,51 +542,10 @@ export default {
 
   data() {
     return {
-      // projects: [
-      //   {
-      //     image: slider1,
-      //     title: "Baking Class",
-      //     backText: "Baking Class",
-      //     popupContent: "Ini detail lengkap untuk Baking Class...",
-      //   },
-      //   {
-      //     image: slider2,
-      //     title: "Cooking Class",
-      //     backText: "Cooking Class",
-      //     popupContent: "Penjelasan detail Cooking Class...",
-      //   },
-      //   {
-      //     image: slider3,
-      //     title: "Flower Class",
-      //     backText: "Flower Class",
-      //     popupContent: "Belajar merangkai bunga dalam Flower Class...",
-      //   },
-      //   {
-      //     image: slider4,
-      //     title: "Cake Decor Class",
-      //     backText: "Cake Decor Class",
-      //     popupContent: "Dekorasi kue ala profesional di kelas ini...",
-      //   },
-      //   {
-      //     image: slider5,
-      //     title: "Pottery & Clay Class",
-      //     backText: "Pottery & Clay Class",
-      //     popupContent: "Membuat kerajinan tanah liat dan pottery...",
-      //   },
-      //   {
-      //     image: slider6,
-      //     title: "Crafting Class",
-      //     backText: "Crafting Class",
-      //     popupContent: "Berbagai kerajinan tangan kreatif di Crafting Class...",
-      //   },
-      // ],
       activePopup: null,
       isDesktop: false,
       isSidebarOpen: false,
 
-      // popup flipcard
-      // showFlipPopup: false,
-      // selectedFlip: null,
     };
   },
 
@@ -712,24 +641,68 @@ export default {
     checkScreenSize() {
       this.isDesktop = window.innerWidth >= 768;
     },
-    toggleSidebar() {
+
+    handleToggleSidebar() {
       this.isSidebarOpen = !this.isSidebarOpen;
+      console.log("Sidebar open? (Parent)", this.isSidebarOpen);
     },
 
-      handleToggleSidebar() {
-    this.isSidebarOpen = !this.isSidebarOpen;
-    console.log("Sidebar open? (Parent)", this.isSidebarOpen); // Untuk debugging
-  },
-
-    // Flipcard popup methods
-    // openFlipPopup(item) {
-    //   this.selectedFlip = item;
-    //   this.showFlipPopup = true;
-    // },
-    // closeFlipPopup() {
-    //   this.showFlipPopup = false;
-    //   this.selectedFlip = null;
-    // }
   }
 };
 </script>
+
+
+
+  <style scoped>
+ .title {
+   font-family: 'Playfair Display', serif;
+   font-weight: 600; /* Optional: menyesuaikan berat font */
+ }
+
+ .content {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400; /* Optional: menyesuaikan berat font */
+ }
+
+ .animate-fade-in {
+   animation: fade-in 2s ease-out forwards;
+ }
+ .animate-slide-down {
+   animation: slide-down 2s ease-out forwards;
+ }
+ .animate-slide-up {
+   animation: slide-up 2s ease-out forwards;
+ }
+ .animate-fade-in-right {
+   animation: fade-in-right 2s ease-out forwards;
+ }
+
+ @keyframes fade-in {
+   from { opacity: 0; transform: translateY(2.5rem) scale(0.95); } /* 2.5rem = translate-y-10 */
+   to { opacity: 1; transform: translateY(2.5rem) scale(1); }
+ }
+
+ @keyframes slide-down {
+   from { opacity: 0; transform: translateY(-10px); }
+   to { opacity: 1; transform: translateY(0); }
+ }
+ @keyframes slide-up {
+   from { opacity: 0; transform: translateY(10px); }
+   to { opacity: 1; transform: translateY(0); }
+ }
+ @keyframes fade-in-right {
+   from { opacity: 0; transform: translateX(20px); }
+   to { opacity: 1; transform: translateX(0); }
+ }
+ .fade-in {
+   opacity: 0;
+   transform: translateY(20px);
+   transition: all 0.8s ease-out;
+ }
+
+ .fade-in.show {
+   opacity: 1;
+   transform: translateY(0);
+ }
+
+ </style>
