@@ -27,7 +27,7 @@
         <div class="absolute inset-0 bg-cream/30">
           <div class="text-center items-center mt-9 md:mt-24">
             <!-- <h1 class="text-base md:text-2xl"> judul </h1> -->
-              <button @click="openPopup('popup3')"class="cursor-pointer mt-14 md:mt-24 px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink text-cream font-poppins rounded-full transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+              <button @click="openPopup('popup1')"class="cursor-pointer mt-14 md:mt-24 px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink text-cream font-poppins rounded-full transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                 more
               </button>
           </div>
@@ -50,7 +50,7 @@
         <div class="absolute inset-0 bg-cream/30">
           <div class="text-center items-center mt-9 md:mt-24">
             <!-- <h1 class="text-base md:text-2xl"> judul </h1> -->
-              <button @click="openPopup('popup3')"class="cursor-pointer mt-14 md:mt-24 px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink text-cream font-poppins rounded-full transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+              <button @click="openPopup('popup2')"class="cursor-pointer mt-14 md:mt-24 px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink text-cream font-poppins rounded-full transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                 more
               </button>
           </div>
@@ -94,7 +94,7 @@
         <div class="absolute inset-0 bg-cream/30">
           <div class="text-center items-center mt-9 md:mt-24">
             <!-- <h1 class="text-base md:text-2xl"> judul </h1> -->
-              <button @click="openPopup('popup3')"class="cursor-pointer mt-14 md:mt-24 px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink text-cream font-poppins rounded-full transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+              <button @click="openPopup('popup4')"class="cursor-pointer mt-14 md:mt-24 px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink text-cream font-poppins rounded-full transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                 more
               </button>
           </div>
@@ -116,7 +116,7 @@
         <div class="absolute inset-0 bg-cream/30">
           <div class="text-center items-center mt-9 md:mt-24">
             <!-- <h1 class="text-base md:text-2xl"> judul </h1> -->
-              <button @click="openPopup('popup3')"class="cursor-pointer mt-14 md:mt-24 px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink text-cream font-poppins rounded-full transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+              <button @click="openPopup('popup5')"class="cursor-pointer mt-14 md:mt-24 px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink text-cream font-poppins rounded-full transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                 more
               </button>
           </div>
@@ -126,15 +126,58 @@
     </swiper-slide>
   </swiper>
 
-                   <!-- POPUP SIMAPRES -->
+                   <!-- POPUP MSIB -->
+                  <div class="text-xl font-poppins font-normal">
+                     <PopUp :visible="activePopup === 'popup1'" @close="closePopup">
+                     <h2 class="text-sm">MSIB CERTIFICATE</h2>
+                       <p class="mt-4 text-xs">
+                         This certificate is awarded as proof that I have successfully completed the Kampus Merdeka MSIB (Certified Internship and Independent Study) program, where I gained hands-on work experience, participated in regular mentoring sessions, and contributed to application development projects as a Frontend Developer, including completing a team-based final project.
+                        </p>
+                     <div class="items-center justify-center flex mt-8"><img src="../assets/img/sertifmsib.png" class=" items-center w-full h-auto"> </div>
+                     </PopUp>
+                 </div>
+
+                  <!-- POPUP ALFAHUMA -->
+                  <div class="text-xl font-poppins font-normal">
+                     <PopUp :visible="activePopup === 'popup2'" @close="closePopup">
+                     <h2 class="text-sm">ALFAHUMA CERTIFICATE</h2>
+                       <p class="mt-4 text-xs">
+                         This certificate is awarded as proof that I have completed an internship at PT Alfahuma Rekayasa Teknologi, where I served as a Frontend Developer and contributed to application development, UI implementation, and API integration for various projects.
+                      </p>
+                     <div class="flex flex-col items-center justify-center mt-3 w-full">
+                      <img src="../assets/img/sertifalfahuma.png" class="w-full max-w-md mt-3 h-auto">
+                      <img src="../assets/img/sertifalfahuma1.png" class="w-full max-w-md h-auto mt-6 md:ml-5">
+                    </div>
+                     </PopUp>
+                 </div>
+
+                  <!-- POPUP SERTIF TI -->
                   <div class="text-xl font-poppins font-normal">
                      <PopUp :visible="activePopup === 'popup3'" @close="closePopup">
-                     <h2 class="text-sm">SIMAPRES</h2>
+                     <h2 class="text-sm">MICROSOFT CERTIFICATE</h2>
                        <p class="mt-4 text-xs">
-                         SIMAPRES Project Base Learning (PBL) is a web-based application platform that aims to display and edit high-achieving student data, and make it easier to submit and validate achievements. And in this project there are 2 actors, user and admin, each user has a different role.<br><br>
-                         As a Back-End Developer on the SIMAPRES Learning Base Project is a very valuable experience for me. I am in charge of planning and developing servers, designing and managing database structures that are efficient and according to needs, building and developing Back-End using PHP Native, 
-                         and developing and integrating features.</p>
+                         This certificate is awarded as proof that I have completed IT training from TRUST Training Partners (Microsoft Partner), covering proficiency in Microsoft Word, PowerPoint, and Excel as essential workplace productivity skills.</p>
                      <div class="items-center justify-center flex mt-8"><img src="../assets/img/simapres2.svg" class=" items-center w-full h-auto"> </div>
+                     </PopUp>
+                 </div>
+
+                  <!-- POPUP SERTIF BNSP -->
+                  <div class="text-xl font-poppins font-normal">
+                     <PopUp :visible="activePopup === 'popup4'" @close="closePopup">
+                     <h2 class="text-sm">BNSP CERTIFICATE</h2>
+                       <p class="mt-4 text-xs">
+                         This certificate is awarded as proof that I have passed the BNSP competency assessment as a Junior Web Developer, demonstrating skills in basic web development, implementing simple frontend and backend functionality, and meeting industry competency standards.</p>
+                       <div class="items-center justify-center flex mt-8"><img src="../assets/img/simapres2.svg" class=" items-center w-full h-auto"> </div>
+                     </PopUp>
+                 </div>
+
+                  <!-- POPUP SERTIF yuwa -->
+                  <div class="text-xl font-poppins font-normal">
+                     <PopUp :visible="activePopup === 'popup5'" @close="closePopup">
+                     <h2 class="text-sm">YUWARAJA CERTIFICATE</h2>
+                       <p class="mt-4 text-xs">
+                         This certificate is awarded as proof of my participation as a Yuwaraja committee member in the Faculty PKKMB event, where I contributed to event coordination and the execution of activities for new students.</p>
+                     <div class="items-center justify-center flex mt-8"><img src="../assets/img/sertifikat yuwaraja.jpeg" class=" items-center w-full h-auto"> </div>
                      </PopUp>
                  </div>
 </template>

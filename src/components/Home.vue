@@ -251,10 +251,10 @@ import PopUp from './PopUp.vue'
 
   <div class="flex justify-center mt-5 anim-project">
      <div class="bg-pinkmuda translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
-         <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full">
+         <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full ">
              <!-- Konten 1 -->
              <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
-                 <img src="../assets/img/washnjoy.svg" class="w-45 h-45 anim-project">
+                 <img src="../assets/img/finaltaskcover 1.svg" class="w-45 h-45 anim-project">
              </div>
 
              <!-- Konten 2 -->
@@ -263,10 +263,10 @@ import PopUp from './PopUp.vue'
                  <button @click="openPopup('popup7')"class="cursor-pointer mt-5  px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      more
                  </button>
-                 <button @click="openLink('https://github.com/nalinikarinaa/washnjoy')" class="cursor-pointer mt-5  px-4 w-fit h-fit flex items-center justify-center text-lg bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                 <button @click="openLink('https://github.com/nalinikarinaa/final-task-project-management-FE')" class="cursor-pointer mt-5  px-4 w-fit h-fit flex items-center justify-center text-lg bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      <img src="../assets/img/github2.svg" 
                      class="mr-2 cursor-pointer w-5"
-                     @click="openLink('https://github.com/nalinikarinaa/washnjoy')"
+                     @click="openLink('https://github.com/nalinikarinaa/final-task-project-management-FE')"
                     alt="projectwashnjoy"><p class="md:text-lg text-sm">github</p>
                  </button>
              </div>
@@ -275,7 +275,7 @@ import PopUp from './PopUp.vue'
  </div>
 
 
-  <div class="flex justify-center mt-5 anim-project">
+  <div class="flex justify-center anim-project">
      <div class="bg-pinkmuda translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
          <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full">
              <!-- Konten 1 -->
@@ -301,7 +301,7 @@ import PopUp from './PopUp.vue'
  </div>
 
 
- <div class="flex justify-center mt-5 anim-project">
+ <div class="flex justify-center anim-project">
      <div class="bg-pinkmuda translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
          <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full">
              <!-- Konten 1 -->
@@ -476,33 +476,44 @@ import PopUp from './PopUp.vue'
                   <div class="text-xl font-poppins font-normal">
                      <PopUp :visible="activePopup === 'popup5'" @close="closePopup">
                      <h2 class="text-sm">MSIB Batch 7</h2>
-                       <p class="mt-4 text-xs">Being a supervisor at the 2023 Vocational Faculty PKKMB was a very extraordinary experience for me, I met a lot of new people and trained my ability to work well in teams. As a supervisor, I am also responsible for accompanying, guiding, and helping new students get to know and adapt to the campus environment, be a source of information and consultation, monitor and organize activities, and coordinate activities with other committees</p>
+                       <p class="mt-4 text-xs">During the MSIB program, I actively participated in weekly mentoring sessions to discuss task progress, challenges, and evaluations from mentors. As a Frontend Developer, I worked on implementing UI designs from Figma/AI into Vue.js, integrating APIs using Axios, and developing various features for company projects. I also received weekly evaluations based on the tasks assigned.
+                        <br> At the end of the program, I completed a final task in the form of a project management application developed in a team. I served as the Frontend Developer, contributing to UI design, slicing in Figma, implementing the interface in Vue.js, integrating APIs, and handling HTTP requests. I also gained experience as a rotating Project Manager. This program strengthened my technical skills—such as web development, problem-solving, and understanding programming syntax—as well as soft skills including communication, teamwork, and time management.</br>
+                       </p>
                      <div class="items-center justify-center flex mt-8"><img src="../assets/img/msib.jpg" class=" items-center h-auto w-60"> </div>
                      <div class="items-center justify-center flex mt-3"><img src="../assets/img/msibfotbar.jpeg" class="h-auto w-48"> 
                      <img src="../assets/img/fotbarmsib (2).jpeg" class="ml-5 w-64 h-auto"> </div>
-                     <h2 class="text-sm pt-6 ml-6">Some project when i was intern</h2>
+                     <!-- <h2 class="text-sm pt-6 ml-6">Some project when i was intern</h2>
                      <div class="items-center justify-center flex mt-3"><img src="../assets/img/finaltask.png" class="h-auto w-72"> 
-                     <img src="../assets/img/finaltask2.png" class="ml-5 w-72 h-auto"> </div>
+                     <img src="../assets/img/finaltask2.png" class="ml-5 w-72 h-auto"> </div> -->
                      </PopUp>
                  </div>
 
                  <!-- POPUP WEEKENDPLAN -->
                  <div class="text-xl font-poppins font-normal">
                      <PopUp :visible="activePopup === 'popup6'" @close="closePopup">
-                     <h2 class="text-sm">WashNJoy E-Laundry</h2>
+                     <h2 class="text-sm">Weekendplan Admission Web</h2>
                        <p class="mt-4 text-xs">
-                         Becoming a Fullstack Developer on the WashNJoy E-Laundry project was a very valuable experience for me. I worked on this project starting from designing the user interface (UI), designing and building the Front-End using HTML and Tailwind CSS, designing and managing the database structure using SQL, building and developing the Back-End using the Laravel Framework and Laravel Breeze for the sign up feature so that can connect to the user's email, and test the code created to ensure there are no bugs or errors.</p>
+                         Admission Web Weekendplan is my final project, where I served as a Fullstack Developer. On the frontend side, I built a responsive and consistent interface using Vue.js and Tailwind CSS. On the backend, I developed REST APIs using Laravel and implemented Laravel Sanctum to ensure secure and structured authentication processes.
+                        <br>Throughout this project, I developed several core features such as user registration, login and logout authentication, class selection for the creative class program, attendance (clock-in), transaction history, activity notifications, and an admin dashboard for managing CRUD operations on classes, users, and reports. I also designed the database structure, created API endpoints from scratch, implemented user roles (admin and user), and integrated the frontend with the backend using Axios.</br>
+                        <br>On the frontend side, I ensured component reusability, aligned the UI flow with the designs I created in Figma, and maintained responsive behavior across different devices. During development, I also learned various important concepts such as handling CORS, optimizing API performance, managing Sanctum tokens, and structuring Vue components efficiently.</br>
+                        </p>
                      <div class="items-center justify-center flex mt-8"><img src="../assets/img/washnjoy2.svg" class=" items-center w-full h-auto"> </div>
+                     <p class="mt-4 text-xs">
+                        The tech stack I used includes Vue.js, Laravel, Laravel Sanctum, Tailwind CSS, MySQL, and Axios.
+                      </p>
                      </PopUp>
                  </div>
 
                 <!-- POPUP WEB MANAGEMENT -->
-                 <div class="text-xl font-poppins font-normal">
+                <div class="text-xl font-poppins font-normal">
                      <PopUp :visible="activePopup === 'popup7'" @close="closePopup">
-                     <h2 class="text-sm">WashNJoy E-Laundry</h2>
-                       <p class="mt-4 text-xs">
-                         Becoming a Fullstack Developer on the WashNJoy E-Laundry project was a very valuable experience for me. I worked on this project starting from designing the user interface (UI), designing and building the Front-End using HTML and Tailwind CSS, designing and managing the database structure using SQL, building and developing the Back-End using the Laravel Framework and Laravel Breeze for the sign up feature so that can connect to the user's email, and test the code created to ensure there are no bugs or errors.</p>
-                     <div class="items-center justify-center flex mt-8"><img src="../assets/img/washnjoy2.svg" class=" items-center w-full h-auto"> </div>
+                     <h2 class="text-sm">Project Manajemen Web</h2>
+                       <p class="mt-4 text-xs">This project management web application was my final project during the MSIB program. In this final task, I worked in a team and took on the role of Frontend Developer. I also had the opportunity to serve as Project Manager on a weekly rotation. In this project, I handled UI planning, created designs in Figma, performed slicing, and implemented the interface using Vue.js according to the company’s SOP. Additionally, I integrated the Backend API into the Frontend and implemented HTTP requests using Axios.</p>
+                    <div class="flex flex-col items-center justify-center mt-3 w-full">
+                      <img src="../assets/img/finaltask.png" class="w-full max-w-md mt-3 h-auto">
+                      <img src="../assets/img/finaltask2.png" class="w-full max-w-md h-auto mt-6 md:ml-5">
+                    </div>
+
                      </PopUp>
                  </div>
 
