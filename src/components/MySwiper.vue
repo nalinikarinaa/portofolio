@@ -157,7 +157,7 @@
                      <h2 class="text-sm">MICROSOFT CERTIFICATE</h2>
                        <p class="mt-4 text-xs">
                          This certificate is awarded as proof that I have completed IT training from TRUST Training Partners (Microsoft Partner), covering proficiency in Microsoft Word, PowerPoint, and Excel as essential workplace productivity skills.</p>
-                     <div class="items-center justify-center flex mt-8"><img src="../assets/img/simapres2.svg" class=" items-center w-full h-auto"> </div>
+                     <div class="items-center justify-center flex mt-8"><img src="../assets/img/sertifit.png" class=" items-center w-full h-auto"> </div>
                      </PopUp>
                  </div>
 
