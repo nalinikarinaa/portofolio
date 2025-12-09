@@ -453,7 +453,7 @@ import PopUp from './PopUp.vue'
                      <PopUp :visible="activePopup === 'popup4'" @close="closePopup">
                      <h2 class="text-sm">UI/UX WashNJoy E-Laundry</h2>
                        <p class="mt-4 text-xs">
-                         Becoming a Fullstack Developer on the WashNJoy E-Laundry project was a very valuable experience for me. I worked on this project starting from designing the user interface (UI), designing and building the Front-End using HTML and Tailwind CSS, designing and managing the database structure using SQL, building and developing the Back-End using the Laravel Framework and Laravel Breeze for the sign up feature so that can connect to the user's email, and test the code created to ensure there are no bugs or errors.</p>
+                        Developed the full UI/UX design for the WashnJoy Laundry project, starting from user research, wireframing, and prototyping to crafting high-fidelity interface designs. The design focuses on clarity, ease of use, and smooth user flows to ensure a convenient and enjoyable laundry service experience. This project highlights my ability to translate user needs into clean, functional, and visually consistent interfaces.</p>
                      <div class="items-center justify-center flex mt-8"><img src="../assets/img/washnjoy2.svg" class=" items-center w-full h-auto"> </div>
                      </PopUp>
                  </div>
