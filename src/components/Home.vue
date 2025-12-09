@@ -54,32 +54,28 @@ import PopUp from './PopUp.vue'
              'md:w-full lg:h-[70vh] rounded-t-[300px] rounded-b-none': isDesktop
            }">
 
-         <div
+         <!-- <div
        class="md:text-3xl text-xl font-bold p-4 justify-center text-center md:px-28 font-playfair mt-10"
      >
        <p class="anim-text text-pink">PROFILE</p>
-     </div>
+     </div> -->
 
-  <div class="text-sm flex flex-col md:grid md:grid-cols-2 mt-4 text-pink">
+  <div class="text-sm mt-4 text-pink">
      <!-- Kolom kiri -->
-     <div
-       class="md:text-3xl text-xl font-bold p-4 md:flex md:justify-center md:px-28 font-playfair mt-5"
-     >
-       <p class="anim-text">PROFILE</p>
-     </div>
+     <!-- <div
+       class="md:text-3xl text-xl font-bold p-4 md:flex md:justify-center md:px-28 font-playfair"
+     > -->
+       <!-- <p class="anim-text">PROFILE</p> -->
+        <!-- <img src="../assets/img/hello.png">
+     </div> -->
 
      <!-- Kolom kanan -->
      <div class="md:text-xl p-4 md:justify-center md:px-28 font-poppins">
-       <h2 class="font-bold anim-text">
-         Hello, <br />I am Nalini Karina Andhini
+       <h2 class="font-bold anim-text text-center md:text-3xl mt-28">
+         Hello, <br />I am Nalini Karina Andhini,
        </h2>
-       <p class="anim-text">
-         Information Technology Student at Brawijaya University.<br />
-         I have an interest in the world of programming, during college have
-         experience running several projects. Trained in using several
-         programming languages such as PHP, HTML, Javascript and SQL database,
-         and experienced in building websites using several frameworks such as
-         Vue,js, Laravel, Bootstrap, and Tailwind CSS.
+       <p class="anim-text text-center mt-3">
+         a fresh graduate in Information Technology from Universitas Brawijaya with a strong interest in developing interactive and responsive web interfaces. Experienced in working on various projects during my studies using PHP, HTML, CSS, JavaScript, and SQL, and proficient in building websites with frameworks and libraries such as Laravel, Vue.js, Bootstrap, and Tailwind CSS. Highly enthusiastic about learning new technologies and focused on creating functional and visually appealing results. Known for strong communication skills, a high eagerness to learn, and the ability to work effectively in a team.
        </p>
      </div>
    </div>
@@ -90,7 +86,7 @@ import PopUp from './PopUp.vue'
   <div class="bg-cream">
   <!-- Konten -->
 
- <section id="about" class="py-10">
+ <section id="about" class="">
      <div class="flex justify-center text-cream">
      <div class="bg-pink translate-y-10 rounded-3xl justify-center shadow-2xl " style="min-height: 60vh; width: 90vw; max-width: 1200px;">
          <h1 class="text-xl md:text-3xl font-playfair font-bold py-5 mx-10 my-2 text-center anim-about">ABOUT</h1>
@@ -99,7 +95,7 @@ import PopUp from './PopUp.vue'
                  <ul class="list-none">
                      <li class="flex items-center ml-8 mb-4 md:text-lg text-sm">
                          <img src="../assets/img/logoUB.svg" alt="" class="w-8 h-auto mr-2">
-                         <span class="ml-3">2022 - 2025 <br><p class="">Universitas Brawijaya - Teknologi Informasi</p> 
+                         <span class="ml-3">2022 - 2025 <br><p class="">Brawijaya University - Information Technology</p> 
                         </span>
                      </li>
                  </ul>
@@ -107,9 +103,9 @@ import PopUp from './PopUp.vue'
              <hr>
              <Dropdown title="Soft skill" class="cursor-pointer md:text-xl md:mt-4 text-sm font-poppins mb-2">
                  <ul class="list-none md:text-lg text-sm">
-                     <li class="md:text-medium ml-8 mt-2">Komunikasi efektif</li>
-                     <li class="md:text-medium ml-8 mt-4">Kerjasama tim</li>
-                     <li class="md:text-medium ml-8 mt-4">Manajemen waktu</li>
+                     <li class="md:text-medium ml-8 mt-2">Effective Communication</li>
+                     <li class="md:text-medium ml-8 mt-4">Teamwork</li>
+                     <li class="md:text-medium ml-8 mt-4">Time Management</li>
                  </ul>
              </Dropdown>
              <hr>
@@ -228,7 +224,7 @@ import PopUp from './PopUp.vue'
          <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full">
              <!-- Konten 1 -->
              <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
-                 <img src="../assets/img/washnjoy.svg" class="w-45 h-45 anim-project">
+                 <img src="../assets/img/weekendplan.svg" class="w-45 h-45 anim-project">
              </div>
 
              <!-- Konten 2 -->
@@ -237,10 +233,10 @@ import PopUp from './PopUp.vue'
                  <button @click="openPopup('popup6')"class="cursor-pointer mt-5  px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      more
                  </button>
-                 <button @click="openLink('https://github.com/nalinikarinaa/washnjoy')" class="cursor-pointer mt-5  px-4 w-fit h-fit flex items-center justify-center text-lg bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                 <button @click="openLink('https://github.com/nalinikarinaa/admission-web-fe')" class="cursor-pointer mt-5  px-4 w-fit h-fit flex items-center justify-center text-lg bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      <img src="../assets/img/github2.svg" 
                      class="mr-2 cursor-pointer w-5"
-                     @click="openLink('https://github.com/nalinikarinaa/washnjoy')"
+                     @click="openLink('https://github.com/nalinikarinaa/admission-web-fe')"
                     alt="projectwashnjoy"><p class="md:text-lg text-sm">github</p>
                  </button>
              </div>
@@ -393,7 +389,7 @@ import PopUp from './PopUp.vue'
  </section>
 
  <section id="sertificate">
-  <div class="mt-20 text-center items-center mb-10">
+  <div class="mt-32 text-center items-center mb-10">
     <span class="text-center font-playfair md:text-4xl text-pinkk">SERTIFICATE</span>
   </div>
   
@@ -406,7 +402,7 @@ import PopUp from './PopUp.vue'
 
  <section id="contact">
      <div class="bg-pinkmuda">
- <div class="text-sm flex-col md:grid md:grid-cols-2 mt-32 md:px-52">
+ <div class="text-sm flex-col md:grid md:grid-cols-2 mt-14 md:px-52">
              <!-- Konten 1 -->
              <div class="md:text-2xl p-4 md:justify-center font-poppins">
                <li class="flex items-center md:ml-8 ml-2 mb-4 md:text-lg text-xs">
@@ -497,7 +493,13 @@ import PopUp from './PopUp.vue'
                         <br>Throughout this project, I developed several core features such as user registration, login and logout authentication, class selection for the creative class program, attendance (clock-in), transaction history, activity notifications, and an admin dashboard for managing CRUD operations on classes, users, and reports. I also designed the database structure, created API endpoints from scratch, implemented user roles (admin and user), and integrated the frontend with the backend using Axios.</br>
                         <br>On the frontend side, I ensured component reusability, aligned the UI flow with the designs I created in Figma, and maintained responsive behavior across different devices. During development, I also learned various important concepts such as handling CORS, optimizing API performance, managing Sanctum tokens, and structuring Vue components efficiently.</br>
                         </p>
-                     <div class="items-center justify-center flex mt-8"><img src="../assets/img/washnjoy2.svg" class=" items-center w-full h-auto"> </div>
+                      <div class="flex flex-col items-center justify-center mt-3 w-full">
+                      <img src="../assets/img/homepage.png" class="w-full max-w-md mt-3 h-auto">
+                      <img src="../assets/img/class list.png" class="w-full max-w-md mt-3 h-auto">
+                       <img src="../assets/img/register class.png" class="w-full max-w-md mt-3 h-auto">
+                       <img src="../assets/img/dashboard admin.png" class="w-full max-w-md mt-3 h-auto">
+                       <img src="../assets/img/detail class manajemen.png" class="w-full max-w-md mt-3 h-auto">
+                    </div>
                      <p class="mt-4 text-xs">
                         The tech stack I used includes Vue.js, Laravel, Laravel Sanctum, Tailwind CSS, MySQL, and Axios.
                       </p>
