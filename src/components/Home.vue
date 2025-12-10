@@ -51,7 +51,7 @@ import PopUp from './PopUp.vue'
   <div
     class="bg-cream mt-20 justify-center shadow-2xl animate-fade-in overflow-hidden"
     :class="{
-      'w-[100vw] h-[45vh] rounded-t-[60px] rounded-b-none': !isDesktop,
+      'w-[100vw] h-[47vh] rounded-t-[60px] rounded-b-none': !isDesktop,
       'md:w-full lg:h-[60vh] rounded-t-[300px] rounded-b-none': isDesktop
     }"
   >
@@ -189,7 +189,7 @@ import PopUp from './PopUp.vue'
  <section id="project">
 
 <div
-  class="relative bg-fixed bg-cover bg-center mt-20"
+  class="relative bg-fixed bg-cover bg-center mt-20 hidden md:block"
   style="background-image: url('/sertiff.svg'); height: 40vh;"
 >
   <div class="absolute inset-0 bg-cream bg-opacity-50 flex items-center justify-center">
@@ -218,7 +218,7 @@ import PopUp from './PopUp.vue'
      </h1>
  </div> -->
 
-   <div class="mt-10 text-center items-center">
+   <div class="md:mt-10 mt-24 text-center items-center">
          <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
         PROJECT
       </h1>
