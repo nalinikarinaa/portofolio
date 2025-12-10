@@ -2,7 +2,7 @@
   <!-- Tidak pakai wrapper untuk menghindari stacking context -->
   
   <!-- Tombol Hamburger -->
-  <button
+  <!-- <button
     @click.stop="toggleSidebar"
     class="md:hidden fixed top-4 left-4 z-[20000] p-2 rounded bg-pinkk text-white shadow"
   >
@@ -11,10 +11,10 @@
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M4 6h16M4 12h16M4 18h16"/>
     </svg>
-  </button>
+  </button> -->
 
   <!-- Sidebar -->
-  <nav
+  <!-- <nav
     class="fixed top-0 left-0 w-64 h-full bg-pinkmuda text-white shadow-lg
            z-[19000] transform transition-transform duration-300 md:hidden"
     :class="isSidebarOpen ? 'translate-x-0' : '-translate-x-full'"
@@ -25,14 +25,14 @@
       <li class="mb-4"><a href="#project">Project</a></li>
       <li class="mb-4"><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
+  </nav> -->
 
   <!-- Overlay -->
-  <div
+  <!-- <div
     v-if="isSidebarOpen"
     @click.stop="toggleSidebar"
     class="fixed inset-0 bg-black opacity-50 z-[18000] md:hidden"
-  ></div>
+  ></div> -->
 
   <!-- Header Desktop -->
   <header
@@ -48,18 +48,18 @@
 </template>
 
 <script>
-export default {
-  props: {
-    isSidebarOpen: Boolean,
-  },
+// export default {
+//   props: {
+//     isSidebarOpen: Boolean,
+//   },
 
-  emits: ["toggle"],
+//   emits: ["toggle"],
 
-  methods: {
-    toggleSidebar() {
-      this.$emit("toggle");
-      console.log("Tombol Header diklik");
-    },
-  },
-};
+//   methods: {
+//     toggleSidebar() {
+//       this.$emit("toggle");
+//       console.log("Tombol Header diklik");
+//     },
+//   },
+// };
 </script>

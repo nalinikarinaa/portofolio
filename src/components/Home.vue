@@ -47,31 +47,17 @@ import PopUp from './PopUp.vue'
     </div>
       </div>
       
-  <section id="profile" class="overflow-hidden">
-       <div class="bg-cream mt-28 justify-center shadow-2xl animate-fade-in overflow-hidden"
-           :class="{
-             'w-[100vw] h-[70vh] rounded-t-[60px] rounded-b-none': !isDesktop,
-             'md:w-full lg:h-[70vh] rounded-t-[300px] rounded-b-none': isDesktop
-           }">
-
-         <!-- <div
-       class="md:text-3xl text-xl font-bold p-4 justify-center text-center md:px-28 font-playfair mt-10"
-     >
-       <p class="anim-text text-pink">PROFILE</p>
-     </div> -->
-
-  <div class="text-sm mt-4 text-pink">
-     <!-- Kolom kiri -->
-     <!-- <div
-       class="md:text-3xl text-xl font-bold p-4 md:flex md:justify-center md:px-28 font-playfair"
-     > -->
-       <!-- <p class="anim-text">PROFILE</p> -->
-        <!-- <img src="../assets/img/hello.png">
-     </div> -->
-
-     <!-- Kolom kanan -->
-     <div class="md:text-xl p-4 md:justify-center md:px-28 font-poppins">
-       <h2 class="font-bold anim-text text-center md:text-3xl mt-28">
+<section id="profile" class="overflow-hidden">
+  <div
+    class="bg-cream mt-20 justify-center shadow-2xl animate-fade-in overflow-hidden"
+    :class="{
+      'w-[100vw] h-[45vh] rounded-t-[60px] rounded-b-none': !isDesktop,
+      'md:w-full lg:h-[60vh] rounded-t-[300px] rounded-b-none': isDesktop
+    }"
+  >
+    <div class="text-sm mt-4 text-pink">
+      <div class="md:text-xl p-4 md:justify-center md:px-28 font-poppins">
+        <h2 class="font-bold anim-text text-center md:text-3xl md:mt-20 mt-10">
          Hello, <br />I am Nalini Karina Andhini,
        </h2>
        <p class="anim-text text-center mt-3">
@@ -86,96 +72,119 @@ import PopUp from './PopUp.vue'
   <div class="bg-cream">
   <!-- Konten -->
 
- <section id="about" class="">
-     <div class="flex justify-center text-cream">
-     <div class="bg-pink translate-y-10 rounded-3xl justify-center shadow-2xl " style="min-height: 60vh; width: 90vw; max-width: 1200px;">
-         <h1 class="text-xl md:text-3xl font-playfair font-bold py-5 mx-10 my-2 text-center anim-about">ABOUT</h1>
-         <div class="about my-4 px-4 md:ml-28 md:mr-40 mb-5 anim-about">
-             <Dropdown title="Education" class="cursor-pointer md:text-xl text-sm md:mt-4 font-poppins mb-3">
-                 <ul class="list-none">
-                     <li class="flex items-center ml-8 mb-4 md:text-lg text-sm">
-                         <img src="../assets/img/logoUB.svg" alt="" class="w-8 h-auto mr-2">
-                         <span class="ml-3">2022 - 2025 <br><p class="">Brawijaya University - Information Technology</p> 
-                        </span>
-                     </li>
-                 </ul>
-             </Dropdown>
-             <hr>
-             <Dropdown title="Soft skill" class="cursor-pointer md:text-xl md:mt-4 text-sm font-poppins mb-2">
-                 <ul class="list-none md:text-lg text-sm">
-                     <li class="md:text-medium ml-8 mt-2">Effective Communication</li>
-                     <li class="md:text-medium ml-8 mt-4">Teamwork</li>
-                     <li class="md:text-medium ml-8 mt-4">Time Management</li>
-                 </ul>
-             </Dropdown>
-             <hr>
-             <Dropdown title="Framework" class="cursor-pointer md:text-xl md:mt-4 text-sm font-poppins mb-2">
-                 <ul class="list-none md:text-lg text-sm">
-                     <li class="flex items-center ml-8 mb-4">
-                         <img src="../assets/img/tailwind.svg" alt="TailwindCSS" class="w-8 h-auto mr-2">
-                         <span>TailwindCSS</span>
-                     </li>
-                     <li class="flex items-center ml-8 mb-4">
-                         <img src="../assets/img/butrap.svg" alt="Bootstrap" class="w-8 h-auto mr-2">
-                         <span>Bootstrap</span>
-                     </li>
-                     <li class="flex items-center ml-8">
-                         <img src="../assets/img/laravel.svg" alt="Laravel" class="w-8 h-auto mr-2">
-                         <span>Laravel</span>
-                     </li>
-                     <li class="flex items-center ml-8 mt-3">
-                         <img src="../assets/img/vue.svg" alt="Vue.js" class="w-8 h-auto mr-2">
-                         <span>Vue.js</span>
-                     </li>
-                 </ul>
-             </Dropdown>
-             <hr>
-             <Dropdown title="Programing Language" class="cursor-pointer md:text-xl md:mt-4 text-sm font-poppins mb-2">
-                 <ul class="list-none md:text-lg text-sm">
-                     <li class="flex items-center ml-8 mb-4">
-                         <img src="../assets/img/html.svg" alt="HTML" class="w-8 h-auto mr-2">
-                         <span>HTML</span>
-                     </li>
-                     <li class="flex items-center ml-8 mb-4">
-                         <img src="../assets/img/css.svg" alt="CSS" class="w-8 h-auto mr-2">
-                         <span>CSS</span>
-                     </li>
-                     <li class="flex items-center ml-8">
-                         <img src="../assets/img/js.svg" alt="JavaScript" class="w-8 h-auto mr-2">
-                         <span>JavaScript</span>
-                     </li>
-                     <li class="flex items-center ml-8 mt-3">
-                         <img src="../assets/img/php.svg" alt="PHP" class="w-8 h-auto mr-2">
-                         <span>PHP</span>
-                     </li>
-                 </ul>
-             </Dropdown>
-             <hr>
-             <Dropdown title="Tools" class="cursor-pointer md:text-xl md:mt-4 text-sm font-poppins mb-2">
-                 <ul class="list-none md:text-lg text-sm">
-                     <li class="flex items-center ml-8 mb-4">
-                         <img src="../assets/img/vscode.svg" alt="VSCode" class="w-8 h-auto mr-2">
-                         <span>VSCode</span>
-                     </li>
-                     <li class="flex items-center ml-8 mb-4">
-                         <img src="../assets/img/xampp.svg" alt="XAMPP" class="w-8 h-auto mr-2">
-                         <span>XAMPP</span>
-                     </li>
-                     <li class="flex items-center ml-8">
-                         <img src="../assets/img/figma.svg" alt="Figma" class="w-8 h-auto mr-2">
-                         <span>Figma</span>
-                     </li>
-                     <li class="flex items-center ml-8 mt-3">
-                         <img src="../assets/img/canva.svg" alt="Canva" class="w-8 h-auto mr-2">
-                         <span>Canva</span>
-                     </li>
-                 </ul>
-             </Dropdown>
-             <hr>
-         </div>
-     </div>
- </div>
- </section>
+ <section id="about" class="px-4">
+  <div class="flex justify-center text-cream">
+    <div class="bg-pink rounded-3xl shadow-2xl translate-y-10 
+                w-full max-w-4xl md:max-w-5xl p-6 md:p-10">
+
+      <h1 class="text-2xl md:text-4xl font-playfair font-bold text-center mb-8">
+        ABOUT
+      </h1>
+
+      <div class="space-y-6">
+
+        <!-- EDUCATION -->
+        <Dropdown title="Education" class="cursor-pointer font-poppins text-base md:text-xl">
+          <ul class="list-none mt-4">
+            <li class="flex items-center ml-4 md:ml-8 mb-4 text-sm md:text-lg">
+              <img src="../assets/img/logoUB.svg" alt="" class="w-7 h-auto mr-3">
+              <span>
+                2022 - 2025 <br>
+                <p>Brawijaya University – Information Technology</p>
+              </span>
+            </li>
+          </ul>
+        </Dropdown>
+
+        <hr class="border-cream opacity-30">
+
+        <!-- SOFT SKILL -->
+        <Dropdown title="Soft skill" class="cursor-pointer font-poppins text-base md:text-xl">
+          <ul class="list-none mt-4 ml-4 md:ml-8 text-sm md:text-lg space-y-3">
+            <li>Effective Communication</li>
+            <li>Teamwork</li>
+            <li>Time Management</li>
+          </ul>
+        </Dropdown>
+
+        <hr class="border-cream opacity-30">
+
+        <!-- FRAMEWORK -->
+        <Dropdown title="Framework" class="cursor-pointer font-poppins text-base md:text-xl">
+          <ul class="list-none mt-4 ml-4 md:ml-8 text-sm md:text-lg space-y-4">
+            <li class="flex items-center">
+              <img src="../assets/img/tailwind.svg" class="w-7 mr-3">
+              <span>TailwindCSS</span>
+            </li>
+            <li class="flex items-center">
+              <img src="../assets/img/butrap.svg" class="w-7 mr-3">
+              <span>Bootstrap</span>
+            </li>
+            <li class="flex items-center">
+              <img src="../assets/img/laravel.svg" class="w-7 mr-3">
+              <span>Laravel</span>
+            </li>
+            <li class="flex items-center">
+              <img src="../assets/img/vue.svg" class="w-7 mr-3">
+              <span>Vue.js</span>
+            </li>
+          </ul>
+        </Dropdown>
+
+        <hr class="border-cream opacity-30">
+
+        <!-- PROGRAMMING LANGUAGE -->
+        <Dropdown title="Programming Language" class="cursor-pointer font-poppins text-base md:text-xl">
+          <ul class="list-none mt-4 ml-4 md:ml-8 text-sm md:text-lg space-y-4">
+            <li class="flex items-center">
+              <img src="../assets/img/html.svg" class="w-7 mr-3">
+              <span>HTML</span>
+            </li>
+            <li class="flex items-center">
+              <img src="../assets/img/css.svg" class="w-7 mr-3">
+              <span>CSS</span>
+            </li>
+            <li class="flex items-center">
+              <img src="../assets/img/js.svg" class="w-7 mr-3">
+              <span>JavaScript</span>
+            </li>
+            <li class="flex items-center">
+              <img src="../assets/img/php.svg" class="w-7 mr-3">
+              <span>PHP</span>
+            </li>
+          </ul>
+        </Dropdown>
+
+        <hr class="border-cream opacity-30">
+
+        <!-- TOOLS -->
+        <Dropdown title="Tools" class="cursor-pointer font-poppins text-base md:text-xl">
+          <ul class="list-none mt-4 ml-4 md:ml-8 text-sm md:text-lg space-y-4">
+            <li class="flex items-center">
+              <img src="../assets/img/vscode.svg" class="w-7 mr-3">
+              <span>VSCode</span>
+            </li>
+            <li class="flex items-center">
+              <img src="../assets/img/xampp.svg" class="w-7 mr-3">
+              <span>XAMPP</span>
+            </li>
+            <li class="flex items-center">
+              <img src="../assets/img/figma.svg" class="w-7 mr-3">
+              <span>Figma</span>
+            </li>
+            <li class="flex items-center">
+              <img src="../assets/img/canva.svg" class="w-7 mr-3">
+              <span>Canva</span>
+            </li>
+          </ul>
+        </Dropdown>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
  <section id="project">
 
@@ -183,31 +192,24 @@ import PopUp from './PopUp.vue'
   class="relative bg-fixed bg-cover bg-center mt-20"
   style="background-image: url('/sertiff.svg'); height: 40vh;"
 >
+  <div class="absolute inset-0 bg-cream bg-opacity-50 flex items-center justify-center">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-16 text-center">
 
-                <!-- Layer overlay hitam yang bergerak saat di-scroll -->
-                <div class="absolute inset-0 bg-cream bg-opacity-50 flex items-center justify-center">
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-16 text-center">
-                  <div>
-                      <h1 class="text-xl md:text-3xl font-playfair font-bold 
-                                  text-center text-pink bg-pinkmuda px-10 py-4 rounded-full">
-                          PROJECT
-                      </h1>
-                  </div>
-                    <div>
-                      <h1 class="text-xl md:text-3xl font-playfair font-bold 
-                                  text-center text-cream bg-pink px-10 py-4 rounded-full">
-                          EXPERIENCE
-                      </h1>
-                  </div>
-                    <div>
-                      <h1 class="text-xl md:text-3xl font-playfair font-bold 
-                                  text-center text-pink bg-pinkmuda px-10 py-4 rounded-full">
-                          SERTIFICATE
-                      </h1>
-                  </div>
-        </div>
-                </div>
-            </div>
+      <!-- <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
+        PROJECT
+      </h1>
+
+      <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
+        EXPERIENCE
+      </h1>
+
+      <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
+        CERTIFICATE
+      </h1> -->
+
+    </div>
+  </div>
+</div>
 
  <!-- <div class="flex justify-center mt-14 md:mt-10 anim-project">
      <h1 class="text-xl md:text-3xl font-playfair font-bold 
@@ -216,10 +218,16 @@ import PopUp from './PopUp.vue'
      </h1>
  </div> -->
 
+   <div class="mt-10 text-center items-center">
+         <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
+        PROJECT
+      </h1>
+  </div>
+
  <div class="flex flex-col md:grid md:grid-cols-2 anim-project px-10 gap-20">
 
 
- <div class="flex justify-center mt-5 anim-project">
+ <div class="flex justify-center mt-2 anim-project">
      <div class="bg-pinkmuda translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
          <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full">
              <!-- Konten 1 -->
@@ -245,7 +253,7 @@ import PopUp from './PopUp.vue'
  </div>
 
 
-  <div class="flex justify-center mt-5 anim-project">
+  <div class="flex justify-center mt-2 anim-project">
      <div class="bg-pinkmuda translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
          <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full ">
              <!-- Konten 1 -->
@@ -299,7 +307,7 @@ import PopUp from './PopUp.vue'
 
  <div class="flex justify-center anim-project">
      <div class="bg-pinkmuda translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
-         <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full">
+         <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full ">
              <!-- Konten 1 -->
              <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
                  <img src="../assets/img/washnjoy.svg" class="w-45 h-45 anim-project">
@@ -351,7 +359,14 @@ import PopUp from './PopUp.vue'
          EXPERIENCE
      </h1>
  </div> -->
- <div class="flex justify-center anim-project flex-col md:grid md:grid-cols-2 gap-20 px-10 mt-10">
+
+    <div class="mt-24 text-center items-center mb-5">
+         <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
+        EXPERIENCE
+      </h1>
+  </div>
+
+ <div class="flex justify-center anim-project flex-col md:grid md:grid-cols-2 gap-20 px-10 mt-5">
      <div class="bg-pink translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh; anim-project">
          <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full">
              <!-- Konten 1 -->
@@ -388,9 +403,11 @@ import PopUp from './PopUp.vue'
 
  </section>
 
- <section id="sertificate">
-  <div class="mt-32 text-center items-center mb-10">
-    <span class="text-center font-playfair md:text-4xl text-pinkk">SERTIFICATE</span>
+ <section id="CERTIFICATE">
+    <div class="mt-24 text-center items-center mb-14">
+         <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
+        CERTIFICATE
+      </h1>
   </div>
   
   <!-- swipper -->
