@@ -387,7 +387,7 @@ import PopUp from './PopUp.vue'
          <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full">
              <!-- Konten 1 -->
              <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair anim-project">
-                 <img src="../assets/img/MSIBB.png" class="w-40 h-28">
+                 <img src="../assets/img/MSIBB.png" class="w-40 h-28 md:w-60 md:h-auto">
              </div>
 
              <!-- Konten 2 -->

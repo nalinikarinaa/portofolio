@@ -13,7 +13,7 @@
   @swiper="onSwiper"
   @slideChange="onSlideChange"
 > -->
-<div class="grid grid-cols-2 md:grid-cols-3">
+<div class="grid grid-cols-2 md:grid-cols-3 ">
 
  <!-- <swiper-slide> -->
       <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
@@ -38,7 +38,7 @@
     <!-- </swiper-slide> -->
 
     <!-- <swiper-slide> -->
-      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
+      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10 ">
 
         <!-- Foto -->
         <img 
@@ -61,7 +61,7 @@
 
 
    <!-- <swiper-slide> -->
-      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
+      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10 ">
 
         <!-- Foto -->
         <img 
@@ -83,7 +83,7 @@
     <!-- </swiper-slide> -->
 
    <!-- <swiper-slide> -->
-      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
+      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10 ">
 
         <!-- Foto -->
         <img 
@@ -105,7 +105,7 @@
     <!-- </swiper-slide> -->
 
     <!-- <swiper-slide> -->
-      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
+      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10 ">
 
         <!-- Foto -->
         <img 
@@ -127,7 +127,7 @@
     <!-- </swiper-slide> -->
 
     <!-- <swiper-slide> -->
-      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
+      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10 ">
 
         <!-- Foto -->
         <img 
@@ -149,7 +149,7 @@
     <!-- </swiper-slide> -->
 
         <!-- <swiper-slide> -->
-      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden md:mb-5">
+      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden md:mb-5 ">
 
         <!-- Foto -->
         <img 
@@ -171,7 +171,7 @@
     <!-- </swiper-slide> -->
 
         <!-- <swiper-slide> -->
-      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden md:mb-5">
+      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden md:mb-5 ">
 
         <!-- Foto -->
         <img 
@@ -328,3 +328,6 @@ export default {
   z-index: 50 !important;
 }
 </style>
+
+
+
