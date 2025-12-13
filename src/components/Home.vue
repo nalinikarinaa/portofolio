@@ -74,7 +74,7 @@ import PopUp from './PopUp.vue'
 
  <section id="about" class="px-4">
   <div class="flex justify-center text-cream">
-    <div class="bg-pink rounded-3xl shadow-2xl translate-y-10 
+    <div class="bg-pink rounded-3xl shadow-2xl translate-y-10
                 w-full max-w-4xl md:max-w-5xl p-6 md:p-10">
 
       <h1 class="text-2xl md:text-4xl font-playfair font-bold text-center mb-8">
@@ -189,7 +189,7 @@ import PopUp from './PopUp.vue'
  <section id="project">
 
 <div
-  class="relative bg-fixed bg-cover bg-center mt-20 hidden md:block"
+  class="relative bg-fixed bg-cover bg-center md:mt-28 hidden md:block"
   style="background-image: url('/sertiff.svg'); height: 40vh;"
 >
   <div class="absolute inset-0 bg-cream bg-opacity-50 flex items-center justify-center">
