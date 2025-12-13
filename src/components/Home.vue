@@ -218,13 +218,13 @@ import PopUp from './PopUp.vue'
      </h1>
  </div> -->
 
-   <div class="md:mt-10 mt-24 text-center items-center">
+   <div class="md:mt-16 mt-24 text-center items-center mb-8 md:mb-1">
          <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
         PROJECT
       </h1>
   </div>
 
- <div class="flex flex-col md:grid md:grid-cols-2 anim-project px-10  md:gap-20 gap-10">
+ <div class="flex flex-col md:grid md:grid-cols-2 anim-project md:px-10 px-6 md:gap-20 gap-10">
 
 
  <div class="flex justify-center mt-2 anim-project">
@@ -360,40 +360,40 @@ import PopUp from './PopUp.vue'
      </h1>
  </div> -->
 
-    <div class="mt-24 text-center items-center mb-5">
+    <div class="md:mt-24 mt-14 text-center items-center md:mb-5 mb-10">
          <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
         EXPERIENCE
       </h1>
   </div>
 
- <div class="flex justify-center anim-project flex-col md:grid md:grid-cols-2 gap-20 px-10 mt-5">
-     <div class="bg-pink translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh; anim-project">
-         <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full">
+ <div class="flex justify-center anim-project flex-col md:grid md:grid-cols-2 md:px-10 px-6 md:gap-20 gap-10">
+     <div class="bg-pink md:translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh; anim-project">
+         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full">
              <!-- Konten 1 -->
              <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair anim-project">
                  <img src="../assets/img/yuwaraja.svg" class="w-50 h-50">
              </div>
 
              <!-- Konten 2 -->
-             <div class="md:text-3xl text-cream text-lg font-bold px-16 md:justify-center font-poppins md:w-80 anim-project">
+             <div class="md:text-3xl text-md text-cream font-bold px-10 md:justify-center font-poppins md:w-80 anim-project">
                  <p class="text-cream">YUWARAJA XV</p>
-                 <button @click="openPopup('popup1')"class="cursor-pointer mt-5  px-4 w-fit h-fit md:text-lg text-sm bg-cream hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-pink">
+                 <button @click="openPopup('popup1')"class="cursor-pointer md:mt-5 mt-2 px-4 w-fit h-fit md:text-lg text-xs bg-cream hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-pink">
                      more</button>
              </div>
          </div>
      </div>
 
-     <div class="bg-pink translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh; anim-project">
-         <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full">
+     <div class="bg-pink md:translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh; anim-project">
+         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full">
              <!-- Konten 1 -->
              <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair anim-project">
-                 <img src="../assets/img/msib (2).png" class="w-48 h-48">
+                 <img src="../assets/img/MSIBB.png" class="w-40 h-28">
              </div>
 
              <!-- Konten 2 -->
-             <div class="md:text-3xl text-cream text-lg font-bold px-4 md:justify-center font-poppins md:w-80 anim-project">
+             <div class="md:text-3xl text-md font-bold md:px-4 px-12 md:justify-center font-poppins md:w-80 anim-project">
                  <p class="text-cream">MSIB <br></br> Batch 7</p>
-                 <button @click="openPopup('popup5')"class="cursor-pointer mt-5  px-4 w-fit h-fit md:text-lg text-sm bg-cream hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-pink">
+                 <button @click="openPopup('popup5')"class="cursor-pointer md:mt-5 mt-2  px-4 w-fit h-fit md:text-lg text-xs bg-cream hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-pink">
                      more</button>
              </div>
          </div>
@@ -404,7 +404,7 @@ import PopUp from './PopUp.vue'
  </section>
 
  <section id="CERTIFICATE">
-    <div class="mt-24 text-center items-center mb-14">
+    <div class="md:mt-24 mt-14 text-center items-center mb-14">
          <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
         CERTIFICATE
       </h1>
@@ -423,16 +423,16 @@ import PopUp from './PopUp.vue'
              <!-- Konten 1 -->
              <div class="md:text-2xl p-4 md:justify-center font-poppins">
                <li class="flex items-center md:ml-8 ml-2 mb-4 md:text-lg text-xs">
-                         <img src="../assets/img/profill.svg" alt="" class="md:w-12 w-8 h-8 md:h-12 md:mr-2">
-                         <span class="ml-3 font-bold">@nalinikarinaa <br><p class="md:text-sm text-xs font-normal">Social media instagram</p></span>
+                         <img src="../assets/img/logoig.svg" alt="" class="md:w-12 w-8 h-8 md:h-12 md:mr-2">
+                         <span class="ml-3 font-bold">@nalinikarinaa <br><p class="md:text-sm text-xs font-normal"></p></span>
                </li>
                <li class="flex items-center md:ml-8 ml-2 mb-4 md:text-lg text-xs">
                          <img src="../assets/img/emaill.svg" alt="" class="md:w-12 w-8 h-8 md:h-12 md:mr-2">
-                         <span class="ml-3 font-bold">nalinikarina613@gmail.com <br><p class="md:text-sm text-xs font-normal">Email</p></span>
+                         <span class="ml-3 font-bold">nalinikarina613@gmail.com <br><p class="md:text-sm text-xs font-normal"></p></span>
                </li>
                <li class="flex items-center md:ml-8 ml-2 mb-4 md:text-lg text-xs">
                          <img src="../assets/img/lokasii.svg" alt="" class="md:w-12 w-8 h-8 md:h-12 md:mr-2">
-                         <span class="ml-3 font-bold">Malang, Jawa Timur <br><p class="md:text-sm text-xs font-normal">Lokasi saat ini</p></span>
+                         <span class="ml-3 font-bold">Malang, Jawa Timur <br><p class="md:text-sm text-xs font-normal"></p></span>
                </li>
              </div>
 

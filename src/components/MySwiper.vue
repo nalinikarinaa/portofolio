@@ -1,5 +1,5 @@
 <template>
-<swiper
+<!-- <swiper
   :modules="modules"
   :slides-per-view="3"
   :space-between="10"
@@ -12,9 +12,10 @@
   :scrollbar="{ draggable: true }"
   @swiper="onSwiper"
   @slideChange="onSlideChange"
->
+> -->
+<div class="grid grid-cols-2 md:grid-cols-3">
 
- <swiper-slide>
+ <!-- <swiper-slide> -->
       <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
 
         <!-- Foto -->
@@ -34,9 +35,9 @@
         </div>
 
       </div>
-    </swiper-slide>
+    <!-- </swiper-slide> -->
 
-    <swiper-slide>
+    <!-- <swiper-slide> -->
       <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
 
         <!-- Foto -->
@@ -56,10 +57,10 @@
         </div>
 
       </div>
-    </swiper-slide>
+    <!-- </swiper-slide> -->
 
 
-   <swiper-slide>
+   <!-- <swiper-slide> -->
       <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
 
         <!-- Foto -->
@@ -79,9 +80,9 @@
         </div>
 
       </div>
-    </swiper-slide>
+    <!-- </swiper-slide> -->
 
-   <swiper-slide>
+   <!-- <swiper-slide> -->
       <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
 
         <!-- Foto -->
@@ -101,9 +102,9 @@
         </div>
 
       </div>
-    </swiper-slide>
+    <!-- </swiper-slide> -->
 
-    <swiper-slide>
+    <!-- <swiper-slide> -->
       <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
 
         <!-- Foto -->
@@ -123,9 +124,9 @@
         </div>
 
       </div>
-    </swiper-slide>
+    <!-- </swiper-slide> -->
 
-    <swiper-slide>
+    <!-- <swiper-slide> -->
       <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
 
         <!-- Foto -->
@@ -145,10 +146,10 @@
         </div>
 
       </div>
-    </swiper-slide>
+    <!-- </swiper-slide> -->
 
-        <swiper-slide>
-      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
+        <!-- <swiper-slide> -->
+      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden md:mb-5">
 
         <!-- Foto -->
         <img 
@@ -167,10 +168,10 @@
         </div>
 
       </div>
-    </swiper-slide>
+    <!-- </swiper-slide> -->
 
-        <swiper-slide>
-      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden mb-10">
+        <!-- <swiper-slide> -->
+      <div class="relative mx-auto size-[140px] md:size-[160px] lg:size-[280px] rounded-xl overflow-hidden md:mb-5">
 
         <!-- Foto -->
         <img 
@@ -189,8 +190,9 @@
         </div>
 
       </div>
-    </swiper-slide>
-  </swiper>
+    <!-- </swiper-slide> -->
+  <!-- </swiper> -->
+   </div>
 
                    <!-- POPUP MSIB -->
                   <div class="text-xl font-poppins font-normal">
