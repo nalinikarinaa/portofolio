@@ -159,7 +159,7 @@ import PopUp from './PopUp.vue'
 
         <!-- TOOLS -->
         <Dropdown title="Tools" class="cursor-pointer font-poppins text-base md:text-xl">
-          <ul class="list-none mt-4 ml-4 md:ml-8 text-sm md:text-lg space-y-4">
+          <ul class="list-none mt-4 ml-4 md:ml-8 text-sm md:text-lg space-y-4 mb-2 md:mb-0">
             <li class="flex items-center">
               <img src="../assets/img/vscode.svg" class="w-7 mr-3">
               <span>VSCode</span>
@@ -224,28 +224,28 @@ import PopUp from './PopUp.vue'
       </h1>
   </div>
 
- <div class="flex flex-col md:grid md:grid-cols-2 anim-project px-10 gap-20">
+ <div class="flex flex-col md:grid md:grid-cols-2 anim-project px-10  md:gap-20 gap-10">
 
 
  <div class="flex justify-center mt-2 anim-project">
-     <div class="bg-pinkmuda translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
-         <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full">
+     <div class="bg-pinkmuda md:translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
+         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full">
              <!-- Konten 1 -->
              <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
                  <img src="../assets/img/weekendplan.svg" class="w-45 h-45 anim-project">
              </div>
 
              <!-- Konten 2 -->
-             <div class="md:text-3xl text-lg font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
+             <div class="md:text-3xl font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
                  <p>Admission Web <br> Weekendplan </p>
-                 <button @click="openPopup('popup6')"class="cursor-pointer mt-5  px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                 <button @click="openPopup('popup6')"class="cursor-pointer md:mt-5 mt-2  px-4 w-fit h-fit md:text-lg text-xs bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      more
                  </button>
-                 <button @click="openLink('https://github.com/nalinikarinaa/admission-web-fe')" class="cursor-pointer mt-5  px-4 w-fit h-fit flex items-center justify-center text-lg bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                 <button @click="openLink('https://github.com/nalinikarinaa/admission-web-fe')" class="cursor-pointer md:mt-5 mt-2  px-4 w-fit h-fit flex items-center justify-center text-lg bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      <img src="../assets/img/github2.svg" 
                      class="mr-2 cursor-pointer w-5"
                      @click="openLink('https://github.com/nalinikarinaa/admission-web-fe')"
-                    alt="projectwashnjoy"><p class="md:text-lg text-sm">github</p>
+                    alt="projectwashnjoy"><p class="md:text-lg text-xs">github</p>
                  </button>
              </div>
          </div>
@@ -253,25 +253,25 @@ import PopUp from './PopUp.vue'
  </div>
 
 
-  <div class="flex justify-center mt-2 anim-project">
-     <div class="bg-pinkmuda translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
-         <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full ">
+ <div class="flex justify-center mt-2 anim-project">
+     <div class="bg-pinkmuda md:translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
+         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full">
              <!-- Konten 1 -->
              <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
                  <img src="../assets/img/finaltaskcover 1.svg" class="w-45 h-45 anim-project">
              </div>
 
-             <!-- Konten 2 -->
-             <div class="md:text-3xl text-lg font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
+            <!-- Konten 2 -->
+             <div class="md:text-3xl text-md font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
                  <p>Project Manajemen Web </p>
-                 <button @click="openPopup('popup7')"class="cursor-pointer mt-5  px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                 <button @click="openPopup('popup7')"class="cursor-pointer md:mt-5 mt-2  px-4 w-fit h-fit md:text-lg text-xs bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      more
                  </button>
-                 <button @click="openLink('https://github.com/nalinikarinaa/final-task-project-management-FE')" class="cursor-pointer mt-5  px-4 w-fit h-fit flex items-center justify-center text-lg bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                 <button @click="openLink('https://github.com/nalinikarinaa/final-task-project-management-FE')" class="cursor-pointer md:mt-5 mt-2  px-4 w-fit h-fit flex items-center justify-center text-lg bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      <img src="../assets/img/github2.svg" 
                      class="mr-2 cursor-pointer w-5"
                      @click="openLink('https://github.com/nalinikarinaa/final-task-project-management-FE')"
-                    alt="projectwashnjoy"><p class="md:text-lg text-sm">github</p>
+                    alt="projectwashnjoy"><p class="md:text-lg text-xs">github</p>
                  </button>
              </div>
          </div>
@@ -280,24 +280,24 @@ import PopUp from './PopUp.vue'
 
 
   <div class="flex justify-center anim-project">
-     <div class="bg-pinkmuda translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
-         <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full">
+     <div class="bg-pinkmuda md:translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
+         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full">
              <!-- Konten 1 -->
              <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
                  <img src="../assets/img/simapres.svg" class="w-45 h-45 anim-project">
              </div>
 
              <!-- Konten 2 -->
-             <div class="md:text-3xl font-bold px-16 md:justify-center font-poppins text-lg md:w-80 anim-project text-pink">
+             <div class="md:text-3xl text-md font-bold px-10 md:justify-center font-poppins text-lg md:w-80 anim-project text-pink">
                  <p>SIMAPRES</p>
-                 <button @click="openPopup('popup3')"class="cursor-pointer mt-5  px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink text-cream font-poppins rounded-full transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                 <button @click="openPopup('popup3')"class="cursor-pointer md:mt-5 mt-2 px-4 w-fit h-fit md:text-lg text-xs bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink text-cream font-poppins rounded-full transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      more
                  </button>
-                 <button @click="openLink('https://github.com/nalinikarinaa/simapres')" class="cursor-pointer md:mt-5 mt-2  px-4 w-fit h-fit flex items-center justify-center text-lg bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                 <button @click="openLink('https://github.com/nalinikarinaa/simapres')" class="cursor-pointer md:mt-5 mt-2 px-4 w-fit h-fit flex items-center justify-center text-lg bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      <img src="../assets/img/github2.svg"
                      class="mr-2 cursor-pointer w-5"
                      @click="openLink('https://github.com/nalinikarinaa/simapres')"
-                    alt="projectsimapres"><p class="md:text-lg text-sm">github</p>
+                    alt="projectsimapres"><p class="md:text-lg text-xs">github</p>
                  </button>
              </div>
          </div>
@@ -306,24 +306,24 @@ import PopUp from './PopUp.vue'
 
 
  <div class="flex justify-center anim-project">
-     <div class="bg-pinkmuda translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
-         <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full ">
+     <div class="bg-pinkmuda md:translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
+         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full ">
              <!-- Konten 1 -->
              <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
                  <img src="../assets/img/washnjoy.svg" class="w-45 h-45 anim-project">
              </div>
 
              <!-- Konten 2 -->
-             <div class="md:text-3xl text-lg font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
+             <div class="md:text-3xl text-md font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
                  <p>WashNJoy <br> E-Laundry</p>
-                 <button @click="openPopup('popup2')"class="cursor-pointer mt-5  px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                 <button @click="openPopup('popup2')"class="cursor-pointer md:mt-5 mt-2 px-4 w-fit h-fit md:text-lg text-xs bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      more
                  </button>
-                 <button @click="openLink('https://github.com/nalinikarinaa/washnjoy')" class="cursor-pointer mt-5  px-4 w-fit h-fit flex items-center justify-center text-lg bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                 <button @click="openLink('https://github.com/nalinikarinaa/washnjoy')" class="cursor-pointer md:mt-5 mt-2 px-4 w-fit h-fit flex items-center justify-center text-lg bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      <img src="../assets/img/github2.svg" 
                      class="mr-2 cursor-pointer w-5"
                      @click="openLink('https://github.com/nalinikarinaa/washnjoy')"
-                    alt="projectwashnjoy"><p class="md:text-lg text-sm">github</p>
+                    alt="projectwashnjoy"><p class="md:text-lg text-xs">github</p>
                  </button>
              </div>
          </div>
@@ -332,20 +332,20 @@ import PopUp from './PopUp.vue'
 
 
  <div class="flex justify-center anim-project">
-     <div class="bg-pinkmuda translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
-         <div class="text-sm flex flex-col md:grid md:grid-cols-2 items-center h-full">
+     <div class="bg-pinkmuda md:translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
+         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full">
              <!-- Konten 1 -->
-             <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
+             <div class="md:text-5xl text-md font-bold md:flex md:justify-center font-playfair">
                  <img src="../assets/img/uiux 1.svg" class="w-45 h-45 anim-project">
              </div>
 
              <!-- Konten 2 -->
-             <div class="md:text-3xl text-lg font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
+             <div class="md:text-3xl text-md font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
                  <p>UI/UX WashNJoy</p>
-                 <button @click="openPopup('popup4')"class="cursor-pointer mt-5  px-4 w-fit h-fit md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                 <button @click="openPopup('popup4')"class="cursor-pointer md:mt-5 mt-2 px-4 w-fit h-fit md:text-lg text-xs bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      more
                  </button>
-                 <button @click="openLink('https://www.figma.com/proto/u73Eqw4DH1bYSTw9dWPG2Z/PBL-E-LAUNDRY?node-id=259-2699&t=ebwIu5x0UtTgN1PZ-0&scaling=min-zoom&content-scaling=fixed&page-id=259%3A2680&starting-point-node-id=259%3A2699')" class="cursor-pointer mt-5  px-4 w-fit h-fit flex items-center justify-center md:text-lg text-sm bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
+                 <button @click="openLink('https://www.figma.com/proto/u73Eqw4DH1bYSTw9dWPG2Z/PBL-E-LAUNDRY?node-id=259-2699&t=ebwIu5x0UtTgN1PZ-0&scaling=min-zoom&content-scaling=fixed&page-id=259%3A2680&starting-point-node-id=259%3A2699')" class="cursor-pointer md:mt-5 mt-2 px-4 w-fit h-fit flex items-center justify-center md:text-lg text-xs bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      prototype
                  </button>
              </div>
