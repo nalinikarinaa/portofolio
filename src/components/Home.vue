@@ -21,14 +21,19 @@ import PopUp from './PopUp.vue'
   <div class="translate-y-4 ">
   <div class="bg-cream mt-12 rounded-3xl  justify-center flex-col grid grid-cols-2 shadow-2xl animate-fade-in"
        :class="{
-         'w-[80vw] h-[40vh]': !isDesktop,
+         'w-[80vw] h-[30vh]': !isDesktop,
          'md:w-[80vw] lg:h-[70vh]': isDesktop
        }">
+
+<div class="items-center flex justify-end md:translate-y-[-192px] translate-y-[-5px] translate-x-9 md:translate-x-0">
+  <img src="../assets/img/hmm2.svg" class="w-[250px] md:w-full max-w-[540px] h-auto md:mt-44 mt-6">
+</div>
+
         <div class="py-5 md:mx-10 md:mt-32 mx-5 mt-5">
-<h1 class="text-2xl md:text-6xl font-playfair font-bold text-pink"
-    style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
-  NALINI KARINA ANDHINI
-</h1>
+  <h1 class="text-2xl md:text-6xl font-playfair font-bold text-pink"
+      style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+    NALINI KARINA ANDHINI
+  </h1>
       <p class="text-sm md:text-2xl font-poppins font-medium my-5 mb-1">Web Developer</p>
       <div class="bg-pinkk md:w-48 w-28 py-0.5 md:mb-5 md:mt-2"></div>
       <div class="flex">
@@ -38,10 +43,14 @@ import PopUp from './PopUp.vue'
       </div>
     
         </div>
+
+<!-- <div class="items-center flex justify-end md:translate-y-[-192px] hidden md:block translate-x-6 md:translate-x-0">
+  <img src="../assets/img/hmm2.svg" class="w-[250px] md:w-full max-w-[540px] h-auto md:mt-44 mt-6">
+</div> -->
  
-<div class="items-center flex justify-end md:translate-y-[-170px] translate-x-6 md:translate-x-0">
+<!-- <div class="items-center flex justify-end md:translate-y-[-170px] translate-x-6 md:translate-x-0">
   <img src="../assets/img/hmm.svg" class="w-[250px] md:w-full max-w-[540px] h-auto md:mt-44 mt-6">
-</div>
+</div> -->
 
   </div>
     </div>
