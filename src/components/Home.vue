@@ -19,24 +19,25 @@ import PopUp from './PopUp.vue'
     <div class="!bg-pink">
     <div class="flex justify-center ">
   <div class="translate-y-4 ">
-  <div class="bg-cream mt-12 rounded-3xl  justify-center flex-col grid grid-cols-2 shadow-2xl animate-fade-in"
+  <div class="bg-cream mt-12 rounded-3xl  justify-center flex shadow-2xl animate-fade-in"
        :class="{
          'w-[80vw] h-[30vh]': !isDesktop,
          'md:w-[80vw] lg:h-[70vh]': isDesktop
        }">
 
-<div class="items-center flex justify-end md:translate-y-[-192px] translate-y-[-5px] translate-x-9 md:translate-x-0">
-  <img src="../assets/img/hmm2.svg" class="w-[250px] md:w-full max-w-[540px] h-auto md:mt-44 mt-6">
-</div>
+<!-- <div class="items-center flex justify-end md:translate-y-[-192px] translate-y-[-5px] translate-x-9 md:translate-x-0"> -->
+  <!-- <img src="../assets/img/hmm2.svg" class="w-[250px] md:w-full max-w-[540px] h-auto md:mt-44 mt-6"> -->
+<!-- </div> -->
 
-        <div class="py-5 md:mx-10 md:mt-32 mx-5 mt-5">
+        <div class="py-5 md:mx-10 md:mt-32 mx-5 mt-10">
   <h1 class="text-2xl md:text-6xl font-playfair font-bold text-pink"
       style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
     NALINI KARINA ANDHINI
   </h1>
-      <p class="text-sm md:text-2xl font-poppins font-medium my-5 mb-1">Web Developer</p>
-      <div class="bg-pinkk md:w-48 w-28 py-0.5 md:mb-5 md:mt-2"></div>
-      <div class="flex">
+      <p class="text-sm md:text-2xl font-poppins font-medium my-5 text-center mb-1">Web Developer</p>
+      <div class="bg-pinkk md:w-48 w-28 py-0.5 md:mb-5 md:mt-2 mx-auto"></div>
+
+      <div class="flex justify-center">
         <img src="../assets/img/github.png" class="cursor-pointer w-10 h-10 md:w-16 md:h-16 mt-2 transition-all duration-1000 ease-in-out transform hover:scale-[1.10]" @click="openLink('https://github.com/nalinikarinaa')" alt="GitHub">
         <img src="../assets/img/linkenln.png" class="ml-2 cursor-pointer w-8 h-8 md:w-14 md:h-14 mt-3 transition-all duration-1000 ease-in-out transform hover:scale-[1.10]" @click="openLink('https://www.linkedin.com/in/nalini-karina-andhini-913944240/')" alt="LinkedIn">
         <img src="../assets/img/ig.png" class="ml-1 cursor-pointer w-12 h-12 md:w-20 md:h-auto mt-1 md:mt-0 transition-all duration-1000 ease-in-out transform hover:scale-[1.10]" @click="openLink('https://www.instagram.com/nalinikarinaa/')" alt="Instagram">
