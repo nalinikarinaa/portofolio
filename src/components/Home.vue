@@ -16,73 +16,305 @@ import PopUp from './PopUp.vue'
  
   
   <div id="porto">
-    <div class="!bg-pink">
+    <div class="!bg-birutua">
     <div class="flex justify-center ">
   <div class="translate-y-4 ">
-  <div class="bg-cream mt-12 rounded-3xl  justify-center flex shadow-2xl animate-fade-in"
+  <div class="bg-cream mt-12 rounded-3xl grid grid-cols-1 md:grid-cols-2 justify-center shadow-2xl animate-fade-in mb-20"
        :class="{
-         'w-[80vw] h-[30vh]': !isDesktop,
-         'md:w-[80vw] lg:h-[70vh]': isDesktop
+        'w-[90vw] py-10': !isDesktop,
+        'md:w-[80vw] md:min-h-[70vh]': isDesktop
        }">
 
-<!-- <div class="items-center flex justify-end md:translate-y-[-192px] translate-y-[-5px] translate-x-9 md:translate-x-0"> -->
-  <!-- <img src="../assets/img/hmm2.svg" class="w-[250px] md:w-full max-w-[540px] h-auto md:mt-44 mt-6"> -->
-<!-- </div> -->
+    <div class="md:py-5 md:mx-16 md:mt-24 mx-5 ">
+          <div class="flex flex-row">
+            <h1 class="text-lg md:text-5xl font-playfair font-bold text-birutua"
+                style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+              I'm
+            </h1> 
+            <h1 class="text-lg md:text-5xl font-playfair font-bold ml-3 text-pink"
+                style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+              NALINI KARINA,
+            </h1>
+          </div>
+            <h1 class="text-lg md:text-5xl font-playfair font-bold text-birutua"
+                style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+              Web Developer
+            </h1> 
+  
+      <p class="text-xs md:text-lg font-poppins text-birutua my-5 mb-1">Frontend Developer focused on building responsive UI, clean design systems, and seamless user experiences using Vue.js and Tailwind CSS.</p>
+      <div class="md:mt-7 mt-3 flex gap-6 md:ml-10">
+        <RouterLink
+          to="/about"
+          class="bg-pink2 md:px-8 px-4 py-2 rounded-md text-white hover:bg-birutua md:text-lg text-xs inline-block"
+        >
+          About
+        </RouterLink>
 
-        <div class="py-5 md:mx-10 md:mt-32 mx-5 mt-10">
-  <h1 class="text-2xl md:text-6xl font-playfair font-bold text-pink"
-      style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
-    NALINI KARINA ANDHINI
-  </h1>
-      <p class="text-sm md:text-2xl font-poppins font-medium my-5 text-center mb-1">Web Developer</p>
-      <div class="bg-pinkk md:w-48 w-28 py-0.5 md:mb-5 md:mt-2 mx-auto"></div>
-
-      <div class="flex justify-center">
-        <img src="../assets/img/github.png" class="cursor-pointer w-10 h-10 md:w-16 md:h-16 mt-2 transition-all duration-1000 ease-in-out transform hover:scale-[1.10]" @click="openLink('https://github.com/nalinikarinaa')" alt="GitHub">
-        <img src="../assets/img/linkenln.png" class="ml-2 cursor-pointer w-8 h-8 md:w-14 md:h-14 mt-3 transition-all duration-1000 ease-in-out transform hover:scale-[1.10]" @click="openLink('https://www.linkedin.com/in/nalini-karina-andhini-913944240/')" alt="LinkedIn">
-        <img src="../assets/img/ig.png" class="ml-1 cursor-pointer w-12 h-12 md:w-20 md:h-auto mt-1 md:mt-0 transition-all duration-1000 ease-in-out transform hover:scale-[1.10]" @click="openLink('https://www.instagram.com/nalinikarinaa/')" alt="Instagram">
+        <!-- <button class="bg-birutua px-8 py-2 rounded-md text-white hover hover:bg-pinkmuda text-md ">Download CV</button> -->
+         <a
+          href="/cv/CV-NALINI.pdf"
+          download="CV-Nalini-Karina.pdf"
+          class="bg-birutua md:px-8 px-4 py-2 rounded-md text-white hover:bg-pinkmuda md:text-lg text-xs inline-block"
+        >
+          Download CV
+        </a>
       </div>
-    
-        </div>
+     </div>
 
-<!-- <div class="items-center flex justify-end md:translate-y-[-192px] hidden md:block translate-x-6 md:translate-x-0">
-  <img src="../assets/img/hmm2.svg" class="w-[250px] md:w-full max-w-[540px] h-auto md:mt-44 mt-6">
-</div> -->
- 
-<!-- <div class="items-center flex justify-end md:translate-y-[-170px] translate-x-6 md:translate-x-0">
-  <img src="../assets/img/hmm.svg" class="w-[250px] md:w-full max-w-[540px] h-auto md:mt-44 mt-6">
-</div> -->
-
+<div class="items-center hidden md:block translate-x-6 md:translate-x-0 mt-20 ml-24">
+    <div class="bg-birutua rounded-[40px] inline-block">
+  <img src="../assets/img/hmm2.svg" class="w-[150px] md:w-full max-w-[300px] h-auto">
+  </div>
+        <div class="flex ml-24">
+        <img src="../assets/img/github.png" class="cursor-pointer w-5 h-5 md:w-8 md:h-8 mt-2 transition-all duration-1000 ease-in-out transform hover:scale-[1.10]" @click="openLink('https://github.com/nalinikarinaa')" alt="GitHub">
+        <img src="../assets/img/linkenln.png" class="ml-2 cursor-pointer w-4 h-4 md:w-7 md:h-7 mt-3 transition-all duration-1000 ease-in-out transform hover:scale-[1.10]" @click="openLink('https://www.linkedin.com/in/nalini-karina-andhini-913944240/')" alt="LinkedIn">
+        <img src="../assets/img/ig.png" class="ml-1 cursor-pointer w-6 h-6 md:w-10 md:h-auto mt-1 md:mt-1.5 transition-all duration-1000 ease-in-out transform hover:scale-[1.10]" @click="openLink('https://www.instagram.com/nalinikarinaa/')" alt="Instagram">
+      </div>
+</div>
   </div>
     </div>
       </div>
       
-<section id="profile" class="overflow-hidden">
-  <div
-    class="bg-cream mt-20 justify-center shadow-2xl animate-fade-in overflow-hidden"
-    :class="{
-      'w-[100vw] h-[47vh] rounded-t-[60px] rounded-b-none': !isDesktop,
-      'md:w-full lg:h-[60vh] rounded-t-[300px] rounded-b-none': isDesktop
-    }"
-  >
-    <div class="text-sm mt-4 text-pink">
-      <div class="md:text-xl p-4 md:justify-center md:px-28 font-poppins">
-        <h2 class="font-bold anim-text text-center md:text-3xl md:mt-20 mt-10">
-         Hello, <br />I am Nalini Karina Andhini,
-       </h2>
-       <p class="anim-text text-center mt-3">
-         a fresh graduate in Information Technology from Universitas Brawijaya with a strong interest in developing interactive and responsive web interfaces. Experienced in working on various projects during my studies using PHP, HTML, CSS, JavaScript, and SQL, and proficient in building websites with frameworks and libraries such as Laravel, Vue.js, Bootstrap, and Tailwind CSS. Highly enthusiastic about learning new technologies and focused on creating functional and visually appealing results. Known for strong communication skills, a high eagerness to learn, and the ability to work effectively in a team.
-       </p>
-     </div>
-   </div>
+<section id="about" class="overflow-hidden bg-cream mt-20 rounded-t-[300px] shadow-2xl"
+ :class="{
+        'w-full min-h-[70vh] rounded-t-[60px]': !isDesktop,
+        'w-full lg:min-h-[60vh] rounded-t-[300px]': isDesktop
+      }">
 
-       </div>
- </section>
+  <div class="md:mt-16 max-w-6xl mx-auto md:px-6 px-4">
 
-  <div class="bg-cream">
-  <!-- Konten -->
+  <!-- ================= MOBILE VERSION ================= -->
+  <div class="md:hidden">
 
- <section id="about" class="px-4">
+    <!-- TITLE -->
+    <div class="mb-8 mt-10">
+      <h1 class="text-2xl font-bold leading-tight font-poppins text-pink">
+        TOOLS
+      </h1>
+
+      <p class="text-birutua text-xs leading-relaxed">
+        A collection of tools that support <br>
+        my development and design workflow <br>
+        in creating responsive and interactive web experiences.
+      </p>
+    </div>
+
+    <!-- GRID MOBILE -->
+    <div class="grid grid-cols-2 gap-4 mt-[-50px]">
+
+      <!-- VS CODE (span 2) -->
+      <div class=" bg-birutua rounded-3xl p-3 animate-fade-in w-fit h-fit">
+         <div>
+          <div class="bg-white rounded-md inline-block p-1 mb-1">
+            <img src="../assets/img/vscode.svg" class="w-[15px] h-auto">
+          </div>
+
+          <h1 class="text-white text-sm font-semibold">VS Code</h1>
+
+          <p class="text-white text-xs leading-relaxed">
+            My go-to code editor for building <br>
+            web applications efficiently.
+          </p>
+        </div>
+
+        <div class="flex items-end mt-1">
+          <img src="../assets/img/vscode.jpg" class="h-14 w-auto">
+        </div>
+      </div>
+
+    <!-- </div> -->
+
+      <!-- LARAGON -->
+      <div class="bg-birutua rounded-3xl p-3 animate-fade-in w-fit h-fit">
+      <div>
+          <div class="bg-white rounded-md inline-block p-1 mb-1">
+            <img src="../assets/img/laragon.svg" class="w-[15px] h-auto">
+          </div>
+
+          <h1 class="text-white text-sm font-semibold">LARAGON</h1>
+
+          <p class="text-white text-xs leading-relaxed">
+            Local server environment for <br> web development.
+          </p>
+        </div>
+
+        <div class="flex items-end mt-3">
+          <img src="../assets/img/laragon.jpg" class="h-16 w-auto">
+        </div>
+      </div>
+
+      <!-- FIGMA -->
+      <div class="bg-birutua rounded-3xl p-3 animate-fade-in w-fit h-fit">
+        <div>
+          <div class="bg-white rounded-md inline-block p-1 mb-1">
+            <img src="../assets/img/figma.svg" class="w-[15px] h-auto">
+          </div>
+
+          <h1 class="text-white text-sm font-semibold">FIGMA</h1>
+
+          <p class="text-white text-xs leading-relaxed">
+            A powerful tool for designing <br> modern
+            and interactive UI/UX.
+          </p>
+        </div>
+
+        <div class="flex items-end mt-1">
+          <img src="../assets/img/figma.jpg" class="h-14 w-auto">
+        </div>
+      </div>
+
+
+      <!-- CANVA (span 2) -->
+      <div class=" bg-birutua rounded-3xl p-3 animate-fade-in">
+         <div>
+          <div class="bg-white rounded-md inline-block p-1 mb-1">
+            <img src="../assets/img/canva.svg" class="w-[15px] h-auto">
+          </div>
+
+          <h1 class="text-white text-sm font-semibold">CANVA</h1>
+
+          <p class="text-white text-xs leading-relaxed">
+            A design tool for creating visual content and supporting creative projects.
+          </p>
+        </div>
+
+        <div class="flex items-end mt-1">
+          <img src="../assets/img/canva.jpg" class="h-10 w-20">
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!-- ================= DESKTOP VERSION (ASLI KAMU) ================= -->
+  <div class="hidden md:block">
+
+    <div class="md:flex items-start gap-3 rounded-3xl p-8 animate-fade-in">
+      
+      <div class="md:mt-20">
+        <h1 class="md:text-5xl text-2xl font-bold leading-tight mb-3 font-poppins text-pink">
+          TOOLS
+        </h1>
+
+        <p class="text-birutua md:text-lg text-sm leading-relaxed">
+          A collection of tools that support <br>
+          my development and design workflow <br>
+          in creating responsive and interactive web experiences.
+        </p>
+      </div>
+
+      <!-- VS CODE -->
+      <div class="flex gap-9 bg-birutua rounded-3xl px-6 pt-4 pb-5 self-start md:mt-[-50px] animate-fade-in">
+        <div>
+          <div class="bg-white rounded-lg inline-block p-1 mb-1">
+            <img src="../assets/img/vscode.svg" class="w-[20px] h-auto">
+          </div>
+
+          <h1 class="text-white text-sm font-semibold">VS Code</h1>
+
+          <p class="text-white text-xs leading-relaxed">
+            My go-to code editor for building <br>
+            web applications efficiently.
+          </p>
+        </div>
+
+        <div class="flex items-end">
+          <img src="../assets/img/vscode.jpg" class="h-24 w-auto">
+        </div>
+      </div>
+
+      <!-- FIGMA -->
+      <div class="bg-birutua rounded-3xl px-6 pt-4 pb-5 self-start mt-[-70px] animate-fade-in">
+        <div>
+          <div class="bg-white rounded-lg inline-block p-1 mb-1">
+            <img src="../assets/img/figma.svg" class="w-[20px] h-auto">
+          </div>
+
+          <h1 class="text-white text-sm font-semibold">FIGMA</h1>
+
+          <p class="text-white text-xs leading-relaxed">
+            A powerful tool for designing <br> modern
+            and interactive UI/UX.
+          </p>
+        </div>
+
+        <div class="flex items-end mt-1">
+          <img src="../assets/img/figma.jpg" class="h-24 w-auto">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex items-start gap-3 rounded-3xl p-8 animate-fade-in">
+      
+      <div class="invisible">
+        <h1 class="text-5xl font-bold leading-tight mb-3 font-poppins text-pink">
+          TOOLS
+        </h1>
+
+        <p class="text-birutua text-lg leading-relaxed">
+          A collection of tools that support <br>
+          my development and design workflow <br>
+          in creating responsive and interactive web experiences.
+        </p>
+      </div>
+
+      <!-- LARAGON -->
+      <div class="bg-birutua rounded-3xl px-6 pt-4 pb-5 self-start md:mt-[-200px] animate-fade-in">
+        <div>
+          <div class="bg-white rounded-lg inline-block p-1 mb-1">
+            <img src="../assets/img/laragon.svg" class="w-[20px] h-auto">
+          </div>
+
+          <h1 class="text-white text-sm font-semibold">LARAGON</h1>
+
+          <p class="text-white text-xs leading-relaxed">
+            Local server environment for <br> web development.
+          </p>
+        </div>
+
+        <div class="flex items-end mt-2">
+          <img src="../assets/img/laragon.jpg" class="h-24 w-auto">
+        </div>
+      </div>
+
+      <!-- CANVA -->
+      <div class="flex gap-6 bg-birutua rounded-3xl px-6 pt-4 pb-5 self-start md:mt-[-100px] animate-fade-in">
+        <div>
+          <div class="bg-white rounded-lg inline-block p-1 mb-1">
+            <img src="../assets/img/canva.svg" class="w-[20px] h-auto">
+          </div>
+
+          <h1 class="text-white text-sm font-semibold">CANVA</h1>
+
+          <p class="text-white text-xs leading-relaxed">
+            A design tool for creating <br> visual content and supporting <br> creative projects.
+          </p>
+        </div>
+
+        <div class="flex items-end">
+          <img src="../assets/img/canva.jpg" class="h-20 w-32">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+
+<!-- KL MAU TAMBAHIN KONTEN DISINI -->
+</div>
+
+
+  <!-- <div class="bg-cream"> -->
+   <!-- Konten  -->
+
+ <!-- <section id="about" class="px-4">
   <div class="flex justify-center text-cream">
     <div class="bg-pink rounded-3xl shadow-2xl translate-y-10
                 w-full max-w-4xl md:max-w-5xl p-6 md:p-10">
@@ -91,10 +323,10 @@ import PopUp from './PopUp.vue'
         ABOUT
       </h1>
 
-      <div class="space-y-6">
+      <div class="space-y-6"> -->
 
         <!-- EDUCATION -->
-        <Dropdown title="Education" class="cursor-pointer font-poppins text-base md:text-xl">
+        <!-- <Dropdown title="Education" class="cursor-pointer font-poppins text-base md:text-xl">
           <ul class="list-none mt-4">
             <li class="flex items-center ml-4 md:ml-8 mb-4 text-sm md:text-lg">
               <img src="../assets/img/logoUB.svg" alt="" class="w-7 h-auto mr-3">
@@ -104,12 +336,12 @@ import PopUp from './PopUp.vue'
               </span>
             </li>
           </ul>
-        </Dropdown>
+        </Dropdown> -->
 
-        <hr class="border-cream opacity-30">
+        <!-- <hr class="border-cream opacity-30"> -->
 
         <!-- SOFT SKILL -->
-        <Dropdown title="Soft skill" class="cursor-pointer font-poppins text-base md:text-xl">
+        <!-- <Dropdown title="Soft skill" class="cursor-pointer font-poppins text-base md:text-xl">
           <ul class="list-none mt-4 ml-4 md:ml-8 text-sm md:text-lg space-y-3">
             <li>Effective Communication</li>
             <li>Teamwork</li>
@@ -117,10 +349,10 @@ import PopUp from './PopUp.vue'
           </ul>
         </Dropdown>
 
-        <hr class="border-cream opacity-30">
+        <hr class="border-cream opacity-30"> -->
 
         <!-- FRAMEWORK -->
-        <Dropdown title="Framework" class="cursor-pointer font-poppins text-base md:text-xl">
+        <!-- <Dropdown title="Framework" class="cursor-pointer font-poppins text-base md:text-xl">
           <ul class="list-none mt-4 ml-4 md:ml-8 text-sm md:text-lg space-y-4">
             <li class="flex items-center">
               <img src="../assets/img/tailwind.svg" class="w-7 mr-3">
@@ -141,10 +373,10 @@ import PopUp from './PopUp.vue'
           </ul>
         </Dropdown>
 
-        <hr class="border-cream opacity-30">
+        <hr class="border-cream opacity-30"> -->
 
         <!-- PROGRAMMING LANGUAGE -->
-        <Dropdown title="Programming Language" class="cursor-pointer font-poppins text-base md:text-xl">
+        <!-- <Dropdown title="Programming Language" class="cursor-pointer font-poppins text-base md:text-xl">
           <ul class="list-none mt-4 ml-4 md:ml-8 text-sm md:text-lg space-y-4">
             <li class="flex items-center">
               <img src="../assets/img/html.svg" class="w-7 mr-3">
@@ -165,10 +397,10 @@ import PopUp from './PopUp.vue'
           </ul>
         </Dropdown>
 
-        <hr class="border-cream opacity-30">
+        <hr class="border-cream opacity-30"> -->
 
         <!-- TOOLS -->
-        <Dropdown title="Tools" class="cursor-pointer font-poppins text-base md:text-xl">
+        <!-- <Dropdown title="Tools" class="cursor-pointer font-poppins text-base md:text-xl">
           <ul class="list-none mt-4 ml-4 md:ml-8 text-sm md:text-lg space-y-4 mb-2 md:mb-0">
             <li class="flex items-center">
               <img src="../assets/img/vscode.svg" class="w-7 mr-3">
@@ -191,62 +423,174 @@ import PopUp from './PopUp.vue'
 
       </div>
 
-    </div>
-  </div>
-</section>
+    </div> --> 
+<!-- </section> -->
 
 
  <section id="project">
-
+  <div class="bg-birutua pb-10">
 <div
-  class="relative bg-fixed bg-cover bg-center md:mt-28 hidden md:block"
+  class="relative bg-fixed bg-cover bg-center hidden md:block"
   style="background-image: url('/sertiff.svg'); height: 40vh;"
 >
   <div class="absolute inset-0 bg-cream bg-opacity-50 flex items-center justify-center">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-16 text-center">
 
-      <!-- <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
-        PROJECT
-      </h1>
-
-      <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
-        EXPERIENCE
-      </h1>
-
-      <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
-        CERTIFICATE
-      </h1> -->
-
     </div>
   </div>
 </div>
 
- <!-- <div class="flex justify-center mt-14 md:mt-10 anim-project">
-     <h1 class="text-xl md:text-3xl font-playfair font-bold 
-                 text-center text-pink bg-pinkmuda px-10 py-4 rounded-full">
-         PROJECT
-     </h1>
- </div> -->
-
-   <div class="md:mt-16 mt-24 text-center items-center mb-8 md:mb-1">
-         <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
+   <div class="md:mt-16 pt-8  text-center items-center mb-8 md:mb-1">
+         <h1 class="text-xl md:text-4xl font-poppins font-bold text-pinkmuda drop-shadow-md">
         PROJECT
       </h1>
+      <p class="text-white md:text-lg text-xs">A selection of projects that showcase my skills <br>
+         in building responsive and user-focused web applications.</p>
   </div>
 
- <div class="flex flex-col md:grid md:grid-cols-2 anim-project md:px-10 px-6 md:gap-20 gap-10">
+  <!-- weekendplan -->
+  <div class="grid grid-cols-2 anim-project md:px-10 px-3 md:gap-1 gap-2 md:mt-20">
+     <div class="md:text-5xl font-bold md:flex md:justify-center ml-3 md:ml-0 ">
+        <img src="../assets/img/weekendplan.svg" class="md:w-80 w-44 h-45 anim-project">
+     </div>
+     <div>
+      <h1 class="inline-block md:text-sm text-xs font-semibold tracking-wide text-cream bg-pink px-4 py-2 rounded-full md:mt-4">
+        WEB APPLICATION
+      </h1>
+      <h1 class="md:text-2xl text-md text-cream md:mt-6">
+        ADMISSION WEB WEEKENDPLAN 
+      </h1>
 
+      <button 
+        @click="openPopup('popup6')"
+        class="group inline-flex items-center md:gap-3 gap-1 text-cream md:text-base font-semibold text-xs border-b border-cream pb-1 hover:gap-4 transition-all duration-300 md:mt-20 mt-6"
+      >
+        See Details
+        <span class="transform group-hover:translate-x-1 transition">
+          →
+        </span>
+      </button>
+     </div>
+  </div>
+
+   <!-- project manajemen -->
+  <div class="grid grid-cols-2 anim-project md:px-10 px-6 md:gap-1 gap-1 mt-10">
+     <div class="md:ml-44">
+      <h1 class="inline-block md:text-sm text-xs font-semibold tracking-wide text-cream bg-pink px-4 py-2 rounded-full md:mt-4">
+        WEB APPLICATION
+      </h1>
+      <h1 class="md:text-2xl text-md text-cream md:mt-6">
+        PROJECT MANAJEMEN WEB 
+      </h1>
+
+      <button 
+        @click="openPopup('popup7')"
+        class="group inline-flex items-center md:gap-3 gap-1 text-cream md:text-base font-semibold text-xs border-b border-cream pb-1 hover:gap-4 transition-all duration-300 md:mt-20 mt-6"
+      >
+        See Details
+        <span class="transform group-hover:translate-x-1 transition">
+          →
+        </span>
+      </button>
+     </div>
+      <div class="md:text-5xl font-bold md:flex md:justify-center">
+           <img src="../assets/img/finaltaskcover 1.svg" class="w-32 md:w-60 lg:w-72 h-auto">
+     </div>
+  </div>
+
+
+  <!-- simapres -->
+  <div class="grid grid-cols-2 anim-project md:px-10 px-6 md:gap-1 gap-1 mt-10">
+     <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
+                 <img src="../assets/img/simapres.svg" class="w-40 md:w-80 h-auto anim-project">
+     </div>
+     <div>
+      <h1 class="inline-block md:text-sm text-xs font-semibold tracking-wide text-cream bg-pink px-4 py-2 rounded-full md:mt-4">
+        WEB APPLICATION
+      </h1>
+     <h1 class="md:text-2xl text-md text-cream md:mt-6">
+        SISTEM MAHASISWA BERPRESTASI <br class="hidden md:block">
+         (SIMAPRES)
+      </h1>
+
+      <button 
+        @click="openPopup('popup3')"
+         class="group inline-flex items-center md:gap-3 gap-1 text-cream md:text-base text-xs font-medium border-b border-cream pb-1 hover:gap-4 transition-all duration-300 md:mt-20 mt-5"
+      >
+        See Details
+        <span class="transform group-hover:translate-x-1 transition">
+          →
+        </span>
+      </button>
+     </div>
+  </div>
+
+   <!-- washnjoy -->
+  <div class="grid grid-cols-2 anim-project md:px-10 px-6 md:gap-1 gap-2 mt-10">
+     <div class="md:ml-44">
+      <h1 class="inline-block md:text-sm text-xs font-semibold tracking-wide text-cream bg-pink px-4 py-2 rounded-full md:mt-4">
+        WEB APPLICATION
+      </h1>
+      <h1 class="md:text-2xl text-md text-cream md:mt-6">
+        WASHNJOY E-LAUNDRY
+      </h1>
+
+      <button 
+        @click="openPopup('popup2')"
+        class="group inline-flex items-center md:gap-3 gap-1 text-cream md:text-base font-semibold text-xs border-b border-cream pb-1 hover:gap-4 transition-all duration-300 md:mt-20 mt-9"
+      >
+        See Details
+        <span class="transform group-hover:translate-x-1 transition">
+          →
+        </span>
+      </button>
+     </div>
+      <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
+           <img src="../assets/img/washnjoy.svg" class="md:w-60 w-32 h-45 anim-project">
+     </div>
+  </div>
+
+    <!-- uiux -->
+  <div class="grid grid-cols-2 anim-project md:px-10 px-3 md:gap-1 md:mt-15 mt-5">
+     <div class="md:text-5xl font-bold md:flex md:justify-center ml-4 md:ml-0">
+                 <img src="../assets/img/uiux 1.svg" class="md:w-60 w-32 h-45 anim-project">
+     </div>
+     <div>
+      <h1 class="inline-block md:text-sm text-xs font-semibold tracking-wide text-cream bg-pink px-4 py-2 rounded-full md:mt-4">
+        WEB DESIGN
+      </h1>
+      <h1 class="md:text-2xl text-md text-cream md:mt-6">
+        UI/UX <br> WASHNJOY LAUNDRY
+      </h1>
+
+      <button 
+        @click="openPopup('popup4')"
+        class="group inline-flex items-center md:gap-3 gap-1 text-cream md:text-base font-semibold text-xs border-b border-cream pb-1 hover:gap-4 transition-all duration-300 md:mt-20 mt-8"
+      >
+        See Details
+        <span class="transform group-hover:translate-x-1 transition">
+          →
+        </span>
+      </button>
+     </div>
+  </div>
+
+  </div>
+
+
+<!-- 
+ <div class="flex flex-col md:grid md:grid-cols-2 anim-project md:px-10 px-6 md:gap-20 gap-10">
 
  <div class="flex justify-center mt-2 anim-project">
      <div class="bg-pinkmuda md:translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
-         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full">
+         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full"> -->
              <!-- Konten 1 -->
-             <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
+             <!-- <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
                  <img src="../assets/img/weekendplan.svg" class="w-45 h-45 anim-project">
-             </div>
+             </div> -->
 
              <!-- Konten 2 -->
-             <div class="md:text-3xl font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
+             <!-- <div class="md:text-3xl font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
                  <p>Admission Web <br> Weekendplan </p>
                  <button @click="openPopup('popup6')"class="cursor-pointer md:mt-5 mt-2  px-4 w-fit h-fit md:text-lg text-xs bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      more
@@ -265,14 +609,14 @@ import PopUp from './PopUp.vue'
 
  <div class="flex justify-center mt-2 anim-project">
      <div class="bg-pinkmuda md:translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
-         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full">
+         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full"> -->
              <!-- Konten 1 -->
-             <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
+             <!-- <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
                  <img src="../assets/img/finaltaskcover 1.svg" class="w-45 h-45 anim-project">
-             </div>
+             </div> -->
 
             <!-- Konten 2 -->
-             <div class="md:text-3xl text-md font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
+             <!-- <div class="md:text-3xl text-md font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
                  <p>Project Manajemen Web </p>
                  <button @click="openPopup('popup7')"class="cursor-pointer md:mt-5 mt-2  px-4 w-fit h-fit md:text-lg text-xs bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      more
@@ -291,14 +635,14 @@ import PopUp from './PopUp.vue'
 
   <div class="flex justify-center anim-project">
      <div class="bg-pinkmuda md:translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
-         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full">
+         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full"> -->
              <!-- Konten 1 -->
-             <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
+             <!-- <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
                  <img src="../assets/img/simapres.svg" class="w-45 h-45 anim-project">
-             </div>
+             </div> -->
 
              <!-- Konten 2 -->
-             <div class="md:text-3xl text-md font-bold px-10 md:justify-center font-poppins text-lg md:w-80 anim-project text-pink">
+             <!-- <div class="md:text-3xl text-md font-bold px-10 md:justify-center font-poppins text-lg md:w-80 anim-project text-pink">
                  <p>SIMAPRES</p>
                  <button @click="openPopup('popup3')"class="cursor-pointer md:mt-5 mt-2 px-4 w-fit h-fit md:text-lg text-xs bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink text-cream font-poppins rounded-full transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      more
@@ -317,14 +661,14 @@ import PopUp from './PopUp.vue'
 
  <div class="flex justify-center anim-project">
      <div class="bg-pinkmuda md:translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
-         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full ">
+         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full "> -->
              <!-- Konten 1 -->
-             <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
+             <!-- <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair">
                  <img src="../assets/img/washnjoy.svg" class="w-45 h-45 anim-project">
-             </div>
+             </div> -->
 
              <!-- Konten 2 -->
-             <div class="md:text-3xl text-md font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
+             <!-- <div class="md:text-3xl text-md font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
                  <p>WashNJoy <br> E-Laundry</p>
                  <button @click="openPopup('popup2')"class="cursor-pointer md:mt-5 mt-2 px-4 w-fit h-fit md:text-lg text-xs bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      more
@@ -343,14 +687,14 @@ import PopUp from './PopUp.vue'
 
  <div class="flex justify-center anim-project">
      <div class="bg-pinkmuda md:translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh;">
-         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full">
+         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full"> -->
              <!-- Konten 1 -->
-             <div class="md:text-5xl text-md font-bold md:flex md:justify-center font-playfair">
+             <!-- <div class="md:text-5xl text-md font-bold md:flex md:justify-center font-playfair">
                  <img src="../assets/img/uiux 1.svg" class="w-45 h-45 anim-project">
-             </div>
+             </div> -->
 
              <!-- Konten 2 -->
-             <div class="md:text-3xl text-md font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
+             <!-- <div class="md:text-3xl text-md font-bold px-10 md:justify-center text-pink font-poppins md:w-80">
                  <p>UI/UX WashNJoy</p>
                  <button @click="openPopup('popup4')"class="cursor-pointer md:mt-5 mt-2 px-4 w-fit h-fit md:text-lg text-xs bg-pink hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-cream font-poppins transition-all duration-1000 ease-in-out transform hover:scale-[1.10]">
                      more
@@ -363,14 +707,98 @@ import PopUp from './PopUp.vue'
      </div>
  </div>
  </div>
+ </div> -->
  <!-- <div class="flex justify-center mt-14 md:mt-20 anim-project">
      <h1 class="text-xl md:text-3xl font-playfair font-bold 
                  text-center text-cream bg-pink px-10 py-4 rounded-full">
          EXPERIENCE
      </h1>
  </div> -->
+  </section>
 
-    <div class="md:mt-24 mt-14 text-center items-center md:mb-5 mb-10">
+
+<section id="experience" class="bg-cream pb-28">
+    <div class="flex flex-col md:grid md:grid-cols-2 anim-project gap-8 animate-fade-in">
+      <h1 class="text-4xl font-poppins font-semibold text-pink md:ml-72 md:pt-14 ml-8"> EXPERIENCE </h1>
+      <p class="md:pt-14 pt-3 text-birutua ml-8 md:ml-0">Experiences from participating in organizational activities <br>
+         and internship programs that enhanced my leadership, 
+         <br>collaboration, and professional development.</p>
+    </div>
+
+<div class="flex flex-col md:grid md:grid-cols-2 gap-12 anim-project justify-items-center items-start mt-12 px-6 max-w-5xl mx-auto">
+<div class="bg-birutua rounded-3xl px-6 py-7 w-full max-w-sm animate-fade-in flex flex-col">
+    <div>
+        <h1 class="text-pink text-lg font-semibold leading-snug">
+            FRONTEND DEVELOPER INTERN
+        </h1>
+
+        <p class="text-white text-xs leading-relaxed mt-1">
+            Contributed to developing and optimizing responsive 
+            web interfaces, collaborating with the team to deliver 
+            user-friendly and efficient web applications.
+        </p>
+    </div>
+
+    <div class="flex justify-center mt-4">
+        <img src="../assets/img/MSIBB.png" 
+             class="w-32 md:w-44 h-auto object-contain">
+    </div>
+
+    <button 
+        @click="openPopup('popup5')"
+        class="group inline-flex items-center gap-2 
+               text-cream text-xs font-medium 
+               border-b border-cream pb-1 
+               hover:gap-3 transition-all duration-300 
+               mt-4">
+        See Details
+        <span class="transform group-hover:translate-x-1 transition">
+            →
+        </span>
+    </button>
+
+</div>
+
+<div class="bg-birutua rounded-3xl px-6 py-7 w-full max-w-sm animate-fade-in flex flex-col">
+    <div>
+        <h1 class="text-pink text-lg font-semibold leading-snug">
+            YUWARAJA XV
+        </h1>
+
+        <p class="text-white text-xs leading-relaxed mt-1">
+            Served as a committee member in Yuwaraja,<br>
+          the faculty orientation program, <br>
+          contributing to event coordination and ensuring <br>
+          a welcoming experience for new students.
+        </p>
+    </div>
+
+    <div class="flex justify-center mt-4">
+        <img src="../assets/img/yuwaraja.svg" 
+             class="w-32 md:w-44 h-auto object-contain">
+    </div>
+
+    <button 
+        @click="openPopup('popup1')"
+        class="group inline-flex items-center gap-2 
+               text-cream text-xs font-medium 
+               border-b border-cream pb-1 
+               hover:gap-3 transition-all duration-300 
+               mt-4">
+        See Details
+        <span class="transform group-hover:translate-x-1 transition">
+            →
+        </span>
+    </button>
+</div>
+
+</div>
+
+
+</section>
+
+
+    <!-- <div class="md:mt-24 mt-14 text-center items-center md:mb-5 mb-10">
          <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
         EXPERIENCE
       </h1>
@@ -378,14 +806,14 @@ import PopUp from './PopUp.vue'
 
  <div class="flex justify-center anim-project flex-col md:grid md:grid-cols-2 md:px-10 px-6 md:gap-20 gap-10">
      <div class="bg-pink md:translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh; anim-project">
-         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full">
+         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full"> -->
              <!-- Konten 1 -->
-             <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair anim-project">
-                 <img src="../assets/img/yuwaraja.svg" class="w-50 h-50">
-             </div>
+             <!-- <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair anim-project">
+                 <img src="../assets/img/yuwaraja.svg" class="w-20 h-20">
+             </div> -->
 
              <!-- Konten 2 -->
-             <div class="md:text-3xl text-md text-cream font-bold px-10 md:justify-center font-poppins md:w-80 anim-project">
+             <!-- <div class="md:text-xl text-md text-cream font-bold px-10 md:justify-center font-poppins md:w-80 anim-project">
                  <p class="text-cream">YUWARAJA XV</p>
                  <button @click="openPopup('popup1')"class="cursor-pointer md:mt-5 mt-2 px-4 w-fit h-fit md:text-lg text-xs bg-cream hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-pink">
                      more</button>
@@ -394,14 +822,14 @@ import PopUp from './PopUp.vue'
      </div>
 
      <div class="bg-pink md:translate-y-10 rounded-3xl justify-center p-4 shadow-2xl" md:style="height: 30vh; width: 50vh; anim-project">
-         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full">
+         <div class="text-sm flex md:grid md:grid-cols-2 items-center h-full"> -->
              <!-- Konten 1 -->
-             <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair anim-project">
+             <!-- <div class="md:text-5xl font-bold md:flex md:justify-center font-playfair anim-project">
                  <img src="../assets/img/MSIBB.png" class="w-40 h-28 md:w-60 md:h-auto">
-             </div>
+             </div> -->
 
              <!-- Konten 2 -->
-             <div class="md:text-3xl text-md font-bold md:px-4 px-12 md:justify-center font-poppins md:w-80 anim-project">
+             <!-- <div class="md:text-3xl text-md font-bold md:px-4 px-12 md:justify-center font-poppins md:w-80 anim-project">
                  <p class="text-cream">MSIB <br></br> Batch 7</p>
                  <button @click="openPopup('popup5')"class="cursor-pointer md:mt-5 mt-2  px-4 w-fit h-fit md:text-lg text-xs bg-cream hover:text-pinkmuda hover:bg-pinkmuda border border-pink rounded-full text-pink">
                      more</button>
@@ -409,17 +837,20 @@ import PopUp from './PopUp.vue'
          </div>
      </div>
 
- </div>
+ </div> -->
 
- </section>
 
- <section id="CERTIFICATE">
-    <div class="md:mt-24 mt-14 text-center items-center mb-14">
-         <h1 class="text-2xl md:text-3xl font-playfair font-bold text-pink drop-shadow-md">
+
+ <section id="CERTIFICATE" class="bg-birutua pb-20">
+    <div class="md:pt-24 pt-14 text-center items-center">
+         <h1 class="text-2xl md:text-3xl font-poppins font-bold text-pink drop-shadow-md">
         CERTIFICATE
       </h1>
+      <p class="text-sm text-cream mt-3">A collection of certifications earned through academic programs,<br>
+         internships, and professional training that demonstrate my commitment <br>
+         to continuous learning and skill development in technology and web developmen</p>
   </div>
-  
+ 
   <!-- swipper -->
 <MySwiper />
 
@@ -428,36 +859,38 @@ import PopUp from './PopUp.vue'
  
 
  <section id="contact">
-     <div class="bg-pinkmuda">
- <div class="text-sm flex-col md:grid md:grid-cols-2 mt-14 md:px-52">
+     <div class="bg-pink">
+ <div class="text-sm flex-col md:grid md:grid-cols-2 md:px-52">
              <!-- Konten 1 -->
              <div class="md:text-2xl p-4 md:justify-center font-poppins">
                <li class="flex items-center md:ml-8 ml-2 mb-4 md:text-lg text-xs">
-                         <img src="../assets/img/logoig.svg" alt="" class="md:w-12 w-8 h-8 md:h-12 md:mr-2">
-                         <span class="ml-3 font-bold">@nalinikarinaa <br><p class="md:text-sm text-xs font-normal"></p></span>
+                          <img src="../assets/img/ig.png" class="ml-1 cursor-pointer w-6 h-6 md:w-14 md:h-auto mt-1 md:mt-1.5 transition-all duration-1000 ease-in-out transform hover:scale-[1.10]" 
+                          @click="openLink('https://www.instagram.com/nalinikarinaa/')" alt="Instagram">
+                         <span class="ml-3 font-bold text-cream">@nalinikarinaa <br><p class="md:text-sm text-xs font-normal"></p></span>
                </li>
                <li class="flex items-center md:ml-8 ml-2 mb-4 md:text-lg text-xs">
-                         <img src="../assets/img/emaill.svg" alt="" class="md:w-12 w-8 h-8 md:h-12 md:mr-2">
-                         <span class="ml-3 font-bold">nalinikarina613@gmail.com <br><p class="md:text-sm text-xs font-normal"></p></span>
+                          <img src="../assets/img/email.png" class="ml-1 cursor-pointer w-6 h-6 md:w-12 md:h-auto mt-1 md:mt-1.5 transition-all duration-1000 ease-in-out transform hover:scale-[1.10]" 
+                          @click="openLink('mailto:nalinikarina613@gmail.com')" alt="Email">
+                         <span class="ml-3 text-cream font-bold">nalinikarina613@gmail.com <br><p class="md:text-sm text-xs font-normal"></p></span>
                </li>
                <li class="flex items-center md:ml-8 ml-2 mb-4 md:text-lg text-xs">
-                         <img src="../assets/img/lokasii.svg" alt="" class="md:w-12 w-8 h-8 md:h-12 md:mr-2">
-                         <span class="ml-3 font-bold">Malang, Jawa Timur <br><p class="md:text-sm text-xs font-normal"></p></span>
+                          <img src="../assets/img/lokasi.png" class="ml-1 cursor-pointer w-6 h-6 md:w-12 md:h-auto mt-1 md:mt-1.5 transition-all duration-1000 ease-in-out transform hover:scale-[1.10]" alt="Lokasi">
+                         <span class="ml-3 text-cream font-bold">Malang, Jawa Timur <br><p class="md:text-sm text-xs font-normal"></p></span>
                </li>
              </div>
 
              <!-- Konten 2 -->
-         <div class="hidden md:text-5xl font-bold p-4 md:flex md:justify-center font-playfair mt-16">
+         <div class="hidden md:text-5xl font-bold p-4 md:flex md:justify-center font-poppins text-cream mt-16">
                  <p>CONTACT</p>
              </div>
- </div>
- </div>
+          </div>
+          </div>
 
                  <!-- POPUP SIMAPRES -->
                   <div class="text-xl font-poppins font-normal">
                      <PopUp :visible="activePopup === 'popup3'" @close="closePopup">
-                     <h2 class="text-sm">SIMAPRES</h2>
-                       <p class="mt-4 text-xs">
+                     <h2 class="md:text-lg text-md text-center text-pink font-bold">SIMAPRES</h2>
+                       <p class=" mt-4 text-sm text-birutua md:text-md">
                          SIMAPRES Project Base Learning (PBL) is a web-based application platform that aims to display and edit high-achieving student data, and make it easier to submit and validate achievements. And in this project there are 2 actors, user and admin, each user has a different role.<br><br>
                          As a Back-End Developer on the SIMAPRES Learning Base Project is a very valuable experience for me. I am in charge of planning and developing servers, designing and managing database structures that are efficient and according to needs, building and developing Back-End using PHP Native, 
                          and developing and integrating features.</p>
@@ -468,8 +901,8 @@ import PopUp from './PopUp.vue'
                  <!-- POPUP WASHNJOY -->
                  <div class="text-xl font-poppins font-normal">
                      <PopUp :visible="activePopup === 'popup2'" @close="closePopup">
-                     <h2 class="text-sm">WashNJoy E-Laundry</h2>
-                       <p class="mt-4 text-xs">
+                     <h2 class="md:text-lg text-md text-center text-pink font-bold">WashNJoy E-Laundry</h2>
+                       <p class="mt-4 text-sm text-birutua md:text-md">
                          Becoming a Fullstack Developer on the WashNJoy E-Laundry project was a very valuable experience for me. I worked on this project starting from designing the user interface (UI), designing and building the Front-End using HTML and Tailwind CSS, designing and managing the database structure using SQL, building and developing the Back-End using the Laravel Framework and Laravel Breeze for the sign up feature so that can connect to the user's email, and test the code created to ensure there are no bugs or errors.</p>
                      <div class="items-center justify-center flex mt-8"><img src="../assets/img/washnjoy2.svg" class=" items-center w-full h-auto"> </div>
                      </PopUp>
@@ -478,9 +911,20 @@ import PopUp from './PopUp.vue'
                  <!-- POPUP UI/UX  -->
                    <div class="text-xl font-poppins font-normal">
                      <PopUp :visible="activePopup === 'popup4'" @close="closePopup">
-                     <h2 class="text-sm">UI/UX WashNJoy E-Laundry</h2>
-                       <p class="mt-4 text-xs">
+                     <h2 class="md:text-lg text-md text-center text-pink font-bold">UI/UX WashNJoy E-Laundry</h2>
+                       <p class="mt-4 text-sm text-birutua md:text-md">
                         Developed the full UI/UX design for the WashnJoy Laundry project, starting from user research, wireframing, and prototyping to crafting high-fidelity interface designs. The design focuses on clarity, ease of use, and smooth user flows to ensure a convenient and enjoyable laundry service experience. This project highlights my ability to translate user needs into clean, functional, and visually consistent interfaces.</p>
+                        <p class="mt-4 text-xs text-birutua">
+                        For prototype from the WashNJoy project, you can access this link:
+                        <a
+                          href="https://figma.com/proto/u73Eqw4DH1bYSTw9dWPG2Z/PBL-E-LAUNDRY?node-id=259-2680"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-pink underline hover:opacity-80"
+                        >
+                          prototype WashNJoy
+                        </a>
+                      </p>
                      <div class="items-center justify-center flex mt-8"><img src="../assets/img/washnjoy2.svg" class=" items-center w-full h-auto"> </div>
                      </PopUp>
                  </div>
@@ -488,8 +932,8 @@ import PopUp from './PopUp.vue'
                  <!-- POP UP EXPERIENCE -->
                     <div class="text-xl font-poppins font-normal">
                      <PopUp :visible="activePopup === 'popup1'" @close="closePopup">
-                     <h2 class="text-sm">YUWARAJA XV</h2>
-                       <p class="mt-4 text-xs">Being a supervisor at the 2023 Vocational Faculty PKKMB was a very extraordinary experience for me, I met a lot of new people and trained my ability to work well in teams. As a supervisor, I am also responsible for accompanying, guiding, and helping new students get to know and adapt to the campus environment, be a source of information and consultation, monitor and organize activities, and coordinate activities with other committees</p>
+                     <h2 class="md:text-lg text-md text-center text-pink font-bold">YUWARAJA XV</h2>
+                       <p class="mt-4 text-sm text-birutua md:text-md">Being a supervisor at the 2023 Vocational Faculty PKKMB was a very extraordinary experience for me, I met a lot of new people and trained my ability to work well in teams. As a supervisor, I am also responsible for accompanying, guiding, and helping new students get to know and adapt to the campus environment, be a source of information and consultation, monitor and organize activities, and coordinate activities with other committees</p>
                      <div class="items-center justify-center flex mt-8"><img src="../assets/img/yuwaraja.svg" class=" items-center"> </div>
                      <div class="items-center justify-center flex mt-3"><img src="../assets/img/yuwaraja2.svg" class=""> 
                      <img src="../assets/img/yuwaraja3.svg" class="ml-5 w-36 h-auto"> </div>
@@ -498,8 +942,8 @@ import PopUp from './PopUp.vue'
 
                   <div class="text-xl font-poppins font-normal">
                      <PopUp :visible="activePopup === 'popup5'" @close="closePopup">
-                     <h2 class="text-sm">MSIB Batch 7</h2>
-                       <p class="mt-4 text-xs">During the MSIB program, I actively participated in weekly mentoring sessions to discuss task progress, challenges, and evaluations from mentors. As a Frontend Developer, I worked on implementing UI designs from Figma/AI into Vue.js, integrating APIs using Axios, and developing various features for company projects. I also received weekly evaluations based on the tasks assigned.
+                     <h2 class="md:text-lg text-md text-center text-pink font-bold">MSIB Batch 7</h2>
+                       <p class="mt-4 text-sm text-birutua md:text-md">During the MSIB program, I actively participated in weekly mentoring sessions to discuss task progress, challenges, and evaluations from mentors. As a Frontend Developer, I worked on implementing UI designs from Figma/AI into Vue.js, integrating APIs using Axios, and developing various features for company projects. I also received weekly evaluations based on the tasks assigned.
                         <br> At the end of the program, I completed a final task in the form of a project management application developed in a team. I served as the Frontend Developer, contributing to UI design, slicing in Figma, implementing the interface in Vue.js, integrating APIs, and handling HTTP requests. I also gained experience as a rotating Project Manager. This program strengthened my technical skills—such as web development, problem-solving, and understanding programming syntax—as well as soft skills including communication, teamwork, and time management.</br>
                        </p>
                      <div class="items-center justify-center flex mt-8"><img src="../assets/img/msib.jpg" class=" items-center h-auto w-60"> </div>
@@ -514,12 +958,26 @@ import PopUp from './PopUp.vue'
                  <!-- POPUP WEEKENDPLAN -->
                  <div class="text-xl font-poppins font-normal">
                      <PopUp :visible="activePopup === 'popup6'" @close="closePopup">
-                     <h2 class="text-sm">Weekendplan Admission Web</h2>
-                       <p class="mt-4 text-xs">
-                         Admission Web Weekendplan is my final project, where I served as a Fullstack Developer. On the frontend side, I built a responsive and consistent interface using Vue.js and Tailwind CSS. On the backend, I developed REST APIs using Laravel and implemented Laravel Sanctum to ensure secure and structured authentication processes.
-                        <br>Throughout this project, I developed several core features such as user registration, login and logout authentication, class selection for the creative class program, attendance (clock-in), transaction history, activity notifications, and an admin dashboard for managing CRUD operations on classes, users, and reports. I also designed the database structure, created API endpoints from scratch, implemented user roles (admin and user), and integrated the frontend with the backend using Axios.</br>
+                     <h2 class="md:text-lg text-md text-center text-pink font-bold">Weekendplan Admission Web</h2>
+                       <p class="mt-4 text-sm text-birutua md:text-md">
+                         Admission Web Weekendplan is my final project, where I served as a Fullstack Developer. On the frontend side, I built a responsive and consistent interface using Vue.js and Tailwind CSS. On the backend, I developed REST APIs using Laravel and implemented Laravel Sanctum to ensure secure and structured authentication processes. <br>
+                        <br>Throughout this project, I developed several core features such as user registration, login and logout authentication, class selection for the creative class program, attendance (clock-in), transaction history, activity notifications, and an admin dashboard for managing CRUD operations on classes, users, and reports. I also designed the database structure, created API endpoints from scratch, implemented user roles (admin and user), and integrated the frontend with the backend using Axios.</br> <br>
                         <br>On the frontend side, I ensured component reusability, aligned the UI flow with the designs I created in Figma, and maintained responsive behavior across different devices. During development, I also learned various important concepts such as handling CORS, optimizing API performance, managing Sanctum tokens, and structuring Vue components efficiently.</br>
                         </p>
+                      <p class="mt-4 text-xs text-birutua">
+                        The tech stack I used includes Vue.js, Laravel, Laravel Sanctum, Tailwind CSS, MySQL, and Axios.
+                      </p>
+                      <p class="mt-4 text-xs text-birutua">
+                        For videos from the Weekendplan project, you can access this link:
+                        <a
+                          href="https://drive.google.com/file/d/1Za5i-U_Zw9vDEgBbvPbYr0eOpYvr24hu/view?usp=sharing"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-pink underline hover:opacity-80"
+                        >
+                          demo project weekendplan
+                        </a>
+                      </p>
                       <div class="flex flex-col items-center justify-center mt-3 w-full">
                       <img src="../assets/img/homepage.png" class="w-full max-w-md mt-3 h-auto">
                       <img src="../assets/img/class list.png" class="w-full max-w-md mt-3 h-auto">
@@ -527,17 +985,14 @@ import PopUp from './PopUp.vue'
                        <img src="../assets/img/dashboard admin.png" class="w-full max-w-md mt-3 h-auto">
                        <img src="../assets/img/detail class manajemen.png" class="w-full max-w-md mt-3 h-auto">
                     </div>
-                     <p class="mt-4 text-xs">
-                        The tech stack I used includes Vue.js, Laravel, Laravel Sanctum, Tailwind CSS, MySQL, and Axios.
-                      </p>
                      </PopUp>
                  </div>
 
                 <!-- POPUP WEB MANAGEMENT -->
                 <div class="text-xl font-poppins font-normal">
                      <PopUp :visible="activePopup === 'popup7'" @close="closePopup">
-                     <h2 class="text-sm">Project Manajemen Web</h2>
-                       <p class="mt-4 text-xs">This project management web application was my final project during the MSIB program. In this final task, I worked in a team and took on the role of Frontend Developer. I also had the opportunity to serve as Project Manager on a weekly rotation. In this project, I handled UI planning, created designs in Figma, performed slicing, and implemented the interface using Vue.js according to the company’s SOP. Additionally, I integrated the Backend API into the Frontend and implemented HTTP requests using Axios.</p>
+                     <h2 class="md:text-lg text-md text-center text-pink font-bold">Project Manajemen Web</h2>
+                       <p class="mt-4 text-sm text-birutua md:text-md">This project management web application was my final project during the MSIB program. In this final task, I worked in a team and took on the role of Frontend Developer. I also had the opportunity to serve as Project Manager on a weekly rotation. In this project, I handled UI planning, created designs in Figma, performed slicing, and implemented the interface using Vue.js according to the company’s SOP. Additionally, I integrated the Backend API into the Frontend and implemented HTTP requests using Axios.</p>
                     <div class="flex flex-col items-center justify-center mt-3 w-full">
                       <img src="../assets/img/finaltask.png" class="w-full max-w-md mt-3 h-auto">
                       <img src="../assets/img/finaltask2.png" class="w-full max-w-md h-auto mt-6 md:ml-5">
@@ -548,8 +1003,8 @@ import PopUp from './PopUp.vue'
 
  </section>
    </div>
-   </div>
-   </div>
+
+  
 
   </template>
 
@@ -563,6 +1018,8 @@ import Dropdown from './DetailsDropdown.vue';
 import Footer from './Footer.vue';
 import Header from './Header.vue';
 import PopUp from './PopUp.vue';
+import About from "../components/About.vue";
+
 
  import MySwiper from './MySwiper.vue'
 
@@ -575,7 +1032,8 @@ export default {
     Header,
     Dropdown,
     Footer,
-    MySwiper
+    MySwiper,
+    About
 
   },
  

@@ -29,18 +29,6 @@
   
   
   <style scoped>
-  /* .popup-overlay {
-    position: fixed;
-    max-width: 500px;
-    width: 100%;
-    background: rgba(199, 189, 189, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99999; 
-     inset: 0;
-  } */
-
   .popup-overlay {
   position: fixed;
   inset: 0; /* = top:0; left:0; right:0; bottom:0 */
@@ -51,7 +39,7 @@
   z-index: 99999; /* lebih tinggi dari semua card */
 }
 
-  .popup-content {
+  /* .popup-content {
     position: relative;
     background: white;
     padding: 20px;
@@ -61,7 +49,21 @@
     z-index: 100;
     max-height: 80vh;
     overflow-y: auto;
+} */
+
+.popup-content {
+  position: relative;
+  background: #EDE9DD;
+  padding: 20px;
+  border-radius: 8px;
+
+  width: 90%;
+  max-width: 1100px;
+
+  max-height: 85vh;
+  overflow-y: auto;
 }
+
   
   
   /* Styling untuk tombol close */
