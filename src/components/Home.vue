@@ -128,18 +128,19 @@ import PopUp from './PopUp.vue'
       <div class="bg-birutua rounded-3xl p-3 animate-fade-in w-fit h-fit">
       <div>
           <div class="bg-white rounded-md inline-block p-1 mb-1">
-            <img src="../assets/img/laragon.svg" class="w-[15px] h-auto">
+            <img src="../assets/img/github3.png" class="w-[15px] h-auto">
           </div>
 
-          <h1 class="text-white text-sm font-semibold">LARAGON</h1>
+          <h1 class="text-white text-sm font-semibold">GIT & GitHub</h1>
 
           <p class="text-white text-xs leading-relaxed">
-            Local server environment for <br> web development.
+         Version control platform for <br>
+          code management and collaboration.
           </p>
         </div>
 
         <div class="flex items-end mt-3">
-          <img src="../assets/img/laragon.jpg" class="h-16 w-auto">
+          <img src="../assets/img/github2.png" class="h-14 w-auto">
         </div>
       </div>
 
@@ -150,7 +151,7 @@ import PopUp from './PopUp.vue'
             <img src="../assets/img/postman.png" class="w-[15px] h-auto">
           </div>
 
-          <h1 class="text-white text-sm font-semibold">FIGMA</h1>
+          <h1 class="text-white text-sm font-semibold">POSTMAN</h1>
 
           <p class="text-white text-xs leading-relaxed">
             A powerful tool for designing <br> modern
@@ -171,7 +172,7 @@ import PopUp from './PopUp.vue'
             <img src="../assets/img/trello.png" class="w-[15px] h-auto">
           </div>
 
-          <h1 class="text-white text-sm font-semibold">CANVA</h1>
+          <h1 class="text-white text-sm font-semibold">TRELLO</h1>
 
           <p class="text-white text-xs leading-relaxed">
             A design tool for creating visual content and supporting creative projects.
@@ -266,18 +267,19 @@ import PopUp from './PopUp.vue'
       <div class="bg-birutua rounded-3xl px-6 pt-4 pb-5 self-start md:mt-[-200px] animate-fade-in">
         <div>
           <div class="bg-white rounded-lg inline-block p-1 mb-1">
-            <img src="../assets/img/laragon.svg" class="w-[20px] h-auto">
+            <img src="../assets/img/github3.png" class="w-[20px] h-auto">
           </div>
 
-          <h1 class="text-white text-sm font-semibold">LARAGON</h1>
+          <h1 class="text-white text-sm font-semibold">GIT & GitHub</h1>
 
           <p class="text-white text-xs leading-relaxed">
-            Local server environment for <br> web development.
+          Version control platform for <br>
+          code management and collaboration.
           </p>
         </div>
 
         <div class="flex items-end mt-2">
-          <img src="../assets/img/laragon.jpg" class="h-24 w-auto">
+          <img src="../assets/img/github2.png" class="h-20 w-auto">
         </div>
       </div>
 
