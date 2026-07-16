@@ -273,8 +273,9 @@ import PopUp from './PopUp.vue'
           <h1 class="text-white text-sm font-semibold">GIT & GitHub</h1>
 
           <p class="text-white text-xs leading-relaxed">
-          Version control platform for <br>
-          code management and collaboration.
+              A platform for managing <br>
+              code repositories and <br>
+              collaborative development.
           </p>
         </div>
 
