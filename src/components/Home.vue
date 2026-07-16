@@ -38,10 +38,10 @@ import PopUp from './PopUp.vue'
           </div>
             <h1 class="text-lg md:text-5xl font-playfair font-bold text-birutua"
                 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
-              Web Developer
+              Aspiring Quality Assurance Engineer
             </h1> 
   
-      <p class="text-xs md:text-lg font-poppins text-birutua my-5 mb-1">Frontend Developer focused on building responsive UI, clean design systems, and seamless user experiences using Vue.js and Tailwind CSS.</p>
+      <p class="text-xs md:text-lg font-poppins text-birutua my-5 mb-1">Fresh Graduate in Information Technology with a background in Frontend and Fullstack Development. Passionate about software testing, designing test cases, identifying bugs, and delivering high-quality user experiences.</p>
       <div class="md:mt-7 mt-3 flex gap-6 md:ml-10">
         <RouterLink
           to="/about"
@@ -52,7 +52,7 @@ import PopUp from './PopUp.vue'
 
         <!-- <button class="bg-birutua px-8 py-2 rounded-md text-white hover hover:bg-pinkmuda text-md ">Download CV</button> -->
          <a
-          href="/cv/CV-NALINI.pdf"
+          href="/cv/Nalini Karina Andhini-resume QA (2).pdf"
           download="CV-Nalini-Karina.pdf"
           class="bg-birutua md:px-8 px-4 py-2 rounded-md text-white hover:bg-pinkmuda md:text-lg text-xs inline-block"
         >
@@ -84,7 +84,7 @@ import PopUp from './PopUp.vue'
   <div class="md:mt-16 max-w-6xl mx-auto md:px-6 px-4">
 
   <!-- ================= MOBILE VERSION ================= -->
-  <div class="md:hidden">
+  <div class="md:hidden pb-28">
 
     <!-- TITLE -->
     <div class="mb-8 mt-10">

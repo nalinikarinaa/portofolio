@@ -8,16 +8,12 @@
 
 <p class="text-center md:text-xl text-sm text-cream px-6 md:px-10 max-w-4xl mx-auto leading-relaxed md:mt-5 mt-3 animate-fade-in">
         a fresh graduate in Information Technology from Brawijaya University 
-        with a strong interest in developing interactive and responsive web interfaces. 
-        I have experience working on various projects using PHP, HTML, CSS, JavaScript, SQL, 
-         and frameworks such as Laravel, Vue.js, Bootstrap, and Tailwind CSS. 
-         As a Junior Frontend/Fullstack Developer, I am familiar with building web applications 
-         with features such as authentication, REST APIs, and admin dashboards, 
-         developing responsive UI with Tailwind CSS, and integrating frontend 
-         with backend APIs using Axios. I am highly enthusiastic about learning new technologies,  
-         focused on creating functional and visually appealing results, 
-         and known for strong communication skills, eagerness to learn, 
-         and the ability to collaborate effectively in a team using Git.</p>
+        with a background in Frontend and Fullstack Development and a strong interest in Quality Assurance. 
+        Through developing web applications, I gained an understanding of software development processes
+        and the importance of delivering reliable, user-friendly products. 
+        I am passionate about manual testing, designing test scenarios and test cases, 
+        identifying bugs, and ensuring software quality. I am eager to continue learning, 
+        communicate effectively, and collaborate with development teams to build high-quality applications.</p>
     </div>
 
     <div class="bg-cream font-poppins pt-10 pb-14 animate-fade-in">
