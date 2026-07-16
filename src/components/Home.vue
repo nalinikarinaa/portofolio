@@ -909,8 +909,10 @@ import PopUp from './PopUp.vue'
                      <PopUp :visible="activePopup === 'popup2'" @close="closePopup">
                      <h2 class="md:text-lg text-md text-center text-pink font-bold">WashNJoy E-Laundry</h2>
                        <p class="mt-4 text-sm text-birutua md:text-md">
-                         Becoming a Fullstack Developer on the WashNJoy E-Laundry project was a very valuable experience for me. I worked on this project starting from designing the user interface (UI), designing and building the Front-End using HTML and Tailwind CSS, designing and managing the database structure using SQL, building and developing the Back-End using the Laravel Framework and Laravel Breeze for the sign up feature so that can connect to the user's email, and test the code created to ensure there are no bugs or errors.</p>
-                     <div class="items-center justify-center flex mt-8"><img src="../assets/img/washnjoy2.svg" class=" items-center w-full h-auto"> </div>
+                     
+Becoming a <strong>Fullstack Developer</strong> on the WashNJoy E-Laundry project was a valuable learning experience. I was responsible for designing the user interface (UI), developing the frontend using HTML and Tailwind CSS, designing and managing the database with SQL, and building the backend using Laravel Framework and Laravel Breeze for secure user authentication and email verification. In addition to development, I also performed <strong>manual testing</strong> to verify application functionality, validate user input, identify bugs, and ensure that each feature worked as expected before deployment. This project helped me understand both the software development process and the importance of delivering reliable, high-quality applications.
+</p>
+  <div class="items-center justify-center flex mt-8"><img src="../assets/img/washnjoy2.svg" class=" items-center w-full h-auto"> </div>
                      </PopUp>
                  </div>
 
@@ -966,12 +968,16 @@ import PopUp from './PopUp.vue'
                      <PopUp :visible="activePopup === 'popup6'" @close="closePopup">
                      <h2 class="md:text-lg text-md text-center text-pink font-bold">Weekendplan Admission Web</h2>
                        <p class="mt-4 text-sm text-birutua md:text-md">
-                         Admission Web Weekendplan is my final project, where I served as a Fullstack Developer. On the frontend side, I built a responsive and consistent interface using Vue.js and Tailwind CSS. On the backend, I developed REST APIs using Laravel and implemented Laravel Sanctum to ensure secure and structured authentication processes. <br>
-                        <br>Throughout this project, I developed several core features such as user registration, login and logout authentication, class selection for the creative class program, attendance (clock-in), transaction history, activity notifications, and an admin dashboard for managing CRUD operations on classes, users, and reports. I also designed the database structure, created API endpoints from scratch, implemented user roles (admin and user), and integrated the frontend with the backend using Axios.</br> <br>
-                        <br>On the frontend side, I ensured component reusability, aligned the UI flow with the designs I created in Figma, and maintained responsive behavior across different devices. During development, I also learned various important concepts such as handling CORS, optimizing API performance, managing Sanctum tokens, and structuring Vue components efficiently.</br>
-                        </p>
+                      Admission Web Weekendplan is my final project, where I served as both a <strong>Fullstack Developer</strong> and performed <strong>Manual Quality Assurance</strong>. On the frontend side, I built a responsive and consistent interface using Vue.js and Tailwind CSS. On the backend, I developed REST APIs using Laravel and implemented Laravel Sanctum to ensure secure and structured authentication processes. In addition, I conducted manual testing to verify application functionality, validate user input, identify bugs, and ensure a smooth user experience before deployment.
+                      <br><br>
+
+                      Throughout this project, I developed several core features such as user registration, login and logout authentication, class selection for the creative class program, attendance (clock-in), transaction history, activity notifications, and an admin dashboard for managing CRUD operations on classes, users, and reports. I also designed the database structure, created API endpoints from scratch, implemented user roles (admin and user), and integrated the frontend with the backend using Axios. During the testing process, I created and executed test scenarios for key features, verified expected results, and documented issues found during testing.
+                      <br><br>
+
+                      On the frontend side, I ensured component reusability, aligned the UI flow with the designs I created in Figma, and maintained responsive behavior across different devices. During development, I also learned important concepts such as handling CORS, optimizing API performance, managing Sanctum tokens, structuring Vue components efficiently, and understanding the software testing lifecycle to improve application quality.
+                      </p>
                       <p class="mt-4 text-xs text-birutua">
-                        The tech stack I used includes Vue.js, Laravel, Laravel Sanctum, Tailwind CSS, MySQL, and Axios.
+                        The tech stack I used includes Vue.js, Laravel, Laravel Sanctum, Tailwind CSS, MySQL, Axios, Git & GitHub.
                       </p>
                       <p class="mt-4 text-xs text-birutua">
                         For videos from the Weekendplan project, you can access this link:
