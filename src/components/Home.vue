@@ -94,8 +94,8 @@ import PopUp from './PopUp.vue'
 
       <p class="text-birutua text-xs leading-relaxed">
         A collection of tools that support <br>
-        my development and design workflow <br>
-        in creating responsive and interactive web experiences.
+        my software testing and quality assurance workflow <br>
+        in ensuring reliable and high-quality applications.
       </p>
     </div>
 
@@ -147,7 +147,7 @@ import PopUp from './PopUp.vue'
       <div class="bg-birutua rounded-3xl p-3 animate-fade-in w-fit h-fit">
         <div>
           <div class="bg-white rounded-md inline-block p-1 mb-1">
-            <img src="../assets/img/figma.svg" class="w-[15px] h-auto">
+            <img src="../assets/img/postman.png" class="w-[15px] h-auto">
           </div>
 
           <h1 class="text-white text-sm font-semibold">FIGMA</h1>
@@ -159,7 +159,7 @@ import PopUp from './PopUp.vue'
         </div>
 
         <div class="flex items-end mt-1">
-          <img src="../assets/img/figma.jpg" class="h-14 w-auto">
+          <img src="../assets/img/postman2.png" class="h-14 w-auto">
         </div>
       </div>
 
@@ -168,7 +168,7 @@ import PopUp from './PopUp.vue'
       <div class=" bg-birutua rounded-3xl p-3 animate-fade-in">
          <div>
           <div class="bg-white rounded-md inline-block p-1 mb-1">
-            <img src="../assets/img/canva.svg" class="w-[15px] h-auto">
+            <img src="../assets/img/trello.png" class="w-[15px] h-auto">
           </div>
 
           <h1 class="text-white text-sm font-semibold">CANVA</h1>
@@ -179,7 +179,7 @@ import PopUp from './PopUp.vue'
         </div>
 
         <div class="flex items-end mt-1">
-          <img src="../assets/img/canva.jpg" class="h-10 w-20">
+          <img src="../assets/img/trello2.jpg" class="h-10 w-20">
         </div>
       </div>
 
@@ -200,8 +200,8 @@ import PopUp from './PopUp.vue'
 
         <p class="text-birutua md:text-lg text-sm leading-relaxed">
           A collection of tools that support <br>
-          my development and design workflow <br>
-          in creating responsive and interactive web experiences.
+          my testing and quality assurance workflow <br>
+          in ensuring reliable and high-quality applications.
         </p>
       </div>
 
@@ -225,30 +225,31 @@ import PopUp from './PopUp.vue'
         </div>
       </div>
 
-      <!-- FIGMA -->
+      <!-- POSTMAN -->
       <div class="bg-birutua rounded-3xl px-6 pt-4 pb-5 self-start mt-[-70px] animate-fade-in">
         <div>
           <div class="bg-white rounded-lg inline-block p-1 mb-1">
-            <img src="../assets/img/figma.svg" class="w-[20px] h-auto">
+            <img src="../assets/img/postman.png" class="w-[30px] h-auto">
           </div>
 
-          <h1 class="text-white text-sm font-semibold">FIGMA</h1>
+          <h1 class="text-white text-sm font-semibold">POSTMAN</h1>
 
           <p class="text-white text-xs leading-relaxed">
-            A powerful tool for designing <br> modern
-            and interactive UI/UX.
+            A powerful tool for <br>
+            API testing and <br>
+            request validation.
           </p>
         </div>
 
         <div class="flex items-end mt-1">
-          <img src="../assets/img/figma.jpg" class="h-24 w-auto">
+          <img src="../assets/img/postman2.png" class="h-24 w-auto">
         </div>
       </div>
 
     </div>
 
     <div class="flex items-start gap-3 rounded-3xl p-8 animate-fade-in">
-      
+  
       <div class="invisible">
         <h1 class="text-5xl font-bold leading-tight mb-3 font-poppins text-pink">
           TOOLS
@@ -256,8 +257,8 @@ import PopUp from './PopUp.vue'
 
         <p class="text-birutua text-lg leading-relaxed">
           A collection of tools that support <br>
-          my development and design workflow <br>
-          in creating responsive and interactive web experiences.
+          my testing and quality assurance workflow <br>
+          in ensuring reliable and high-quality applications.
         </p>
       </div>
 
@@ -280,22 +281,24 @@ import PopUp from './PopUp.vue'
         </div>
       </div>
 
-      <!-- CANVA -->
+      <!-- TRELLO -->
       <div class="flex gap-6 bg-birutua rounded-3xl px-6 pt-4 pb-5 self-start md:mt-[-100px] animate-fade-in">
         <div>
           <div class="bg-white rounded-lg inline-block p-1 mb-1">
-            <img src="../assets/img/canva.svg" class="w-[20px] h-auto">
+            <img src="../assets/img/trello.png" class="w-[20px] h-auto">
           </div>
 
-          <h1 class="text-white text-sm font-semibold">CANVA</h1>
+          <h1 class="text-white text-sm font-semibold">TRELLO</h1>
 
           <p class="text-white text-xs leading-relaxed">
-            A design tool for creating <br> visual content and supporting <br> creative projects.
+           A powerful tool for <br>
+            task management and <br>
+            team collaboration.
           </p>
         </div>
 
         <div class="flex items-end">
-          <img src="../assets/img/canva.jpg" class="h-20 w-32">
+          <img src="../assets/img/trello2.jpg" class="h-20 w-32">
         </div>
       </div>
 
