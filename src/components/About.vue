@@ -190,15 +190,15 @@
         </div>
       </div>
 
-       <div class="bg-cream rounded-3xl px-6 pt-4 pb-5 self-start animate-fade-in anim-project">
+       <div class="bg-pink rounded-3xl px-6 pt-4 pb-5 self-start animate-fade-in anim-project">
         <div>
           <div class="bg-white rounded-lg inline-block p-1 mb-1">
             <img src="../assets/img/js.svg" class="w-[40px] h-auto">
           </div>
 
-          <h1 class="text-birutua text-sm font-semibold">Javascript</h1>
+          <h1 class="text-white text-sm font-semibold">Javascript</h1>
 
-          <p class="text-birutua text-xs leading-relaxed">
+          <p class="text-white text-xs leading-relaxed">
             Programming language used to add interactivity, handle logic, and build dynamic behavior in websites.
           </p>
         </div>
@@ -208,15 +208,15 @@
         </div>
       </div>
 
-      <div class="bg-pink rounded-3xl px-6 pt-4 pb-5 self-start animate-fade-in anim-project">
+      <div class="bg-cream rounded-3xl px-6 pt-4 pb-5 self-start animate-fade-in anim-project">
         <div>
           <div class="bg-white rounded-lg inline-block p-1 mb-1">
             <img src="../assets/img/mysql.png" class="w-[20px] h-auto">
           </div>
 
-          <h1 class="text-white text-sm font-semibold">MySql</h1>
+          <h1 class="text-birutua text-sm font-semibold">MySql</h1>
 
-          <p class="text-white text-xs leading-relaxed">
+          <p class="text-birutua text-xs leading-relaxed">
            Relational database management system used to store, manage, validate, and retrieve data efficiently.
           </p>
         </div>
