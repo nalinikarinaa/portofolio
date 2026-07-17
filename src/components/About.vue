@@ -90,8 +90,8 @@
     </div>
 
     <div class="bg-birutua font-poppins md:pt-24 pt-12 pb-28 animate-fade-in anim-project">
-      <h1 class="text-center justify-center items-center md:text-4xl text-2xl text-pink font-bold">FRAMEWORK & PROGRAMING LANGUAGE</h1>
-        <p class="text-center md:text-xl text-sm text-cream px-6 md:px-10 max-w-4xl mx-auto leading-relaxed md:mt-5 mt-2">These are the core frameworks and programming languages I have used in my projects and learning journey.</p>
+      <h1 class="text-center justify-center items-center md:text-4xl text-2xl text-pink font-bold">TECH STACK & TOOLS</h1>
+        <p class="text-center md:text-xl text-sm text-cream px-6 md:px-10 max-w-4xl mx-auto leading-relaxed md:mt-5 mt-2">A collection of technologies, frameworks, and tools I use to develop and test web applications.</p>
 
     <div class="flex flex-col md:grid md:grid-cols-4 gap-12 anim-project justify-items-center items-start md:mt-20 mt-10 px-6 max-w-5xl mx-auto">
 
@@ -116,18 +116,18 @@
       <div class="bg-cream rounded-3xl px-6 pt-4 pb-5 self-start animate-fade-in anim-project">
         <div>
           <div class="bg-white rounded-lg inline-block p-1 mb-1">
-            <img src="../assets/img/butrap.svg" class="w-[20px] h-auto">
+            <img src="../assets/img/github3.png" class="w-[20px] h-auto">
           </div>
 
-          <h1 class="text-birutua text-sm font-semibold">Bootsrap</h1>
+          <h1 class="text-birutua text-sm font-semibold">Git & GitHub</h1>
 
           <p class="text-birutua text-xs leading-relaxed">
-            Popular CSS framework for creating responsive layouts, reusable components, and faster UI development.
+            Version control platform used to manage code, track changes, and collaborate on software projects.
           </p>
         </div>
 
         <div class="flex items-end mt-1">
-          <img src="../assets/img/JavaScript.jpg" class="h-24 w-auto">
+          <img src="../assets/img/github2.png" class="h-24 w-auto">
         </div>
       </div>
 
@@ -190,25 +190,7 @@
         </div>
       </div>
 
-      <div class="bg-pink rounded-3xl px-6 pt-4 pb-5 self-start animate-fade-in anim-project">
-        <div>
-          <div class="bg-white rounded-lg inline-block p-1 mb-1">
-            <img src="../assets/img/css.svg" class="w-[20px] h-auto">
-          </div>
-
-          <h1 class="text-white text-sm font-semibold">CSS</h1>
-
-          <p class="text-white text-xs leading-relaxed">
-           Styling language used to design layouts, improve visuals, and create responsive web page appearances.
-          </p>
-        </div>
-
-        <div class="flex items-end mt-1">
-          <img src="../assets/img/css.jpg" class="h-24 w-auto">
-        </div>
-      </div>
-
-      <div class="bg-cream rounded-3xl px-6 pt-4 pb-5 self-start animate-fade-in anim-project">
+       <div class="bg-cream rounded-3xl px-6 pt-4 pb-5 self-start animate-fade-in anim-project">
         <div>
           <div class="bg-white rounded-lg inline-block p-1 mb-1">
             <img src="../assets/img/js.svg" class="w-[40px] h-auto">
@@ -229,18 +211,37 @@
       <div class="bg-pink rounded-3xl px-6 pt-4 pb-5 self-start animate-fade-in anim-project">
         <div>
           <div class="bg-white rounded-lg inline-block p-1 mb-1">
-            <img src="../assets/img/php.svg" class="w-[40px] h-auto">
+            <img src="../assets/img/mysql.png" class="w-[20px] h-auto">
           </div>
 
-          <h1 class="text-white text-sm font-semibold">PHP</h1>
+          <h1 class="text-white text-sm font-semibold">MySql</h1>
 
           <p class="text-white text-xs leading-relaxed">
-           Server-side programming language used to process data, manage backend logic, and build web applications.
+           Relational database management system used to store, manage, validate, and retrieve data efficiently.
           </p>
         </div>
 
         <div class="flex items-end mt-1">
-          <img src="../assets/img/php.jpg" class="h-24 w-auto">
+          <img src="../assets/img/mysql.jpg" class="h-24 w-auto">
+        </div>
+      </div>
+
+
+      <div class="bg-pink rounded-3xl px-6 pt-4 pb-5 self-start animate-fade-in anim-project">
+        <div>
+          <div class="bg-white rounded-lg inline-block p-1 mb-1">
+            <img src="../assets/img/postman.png" class="w-[40px] h-auto">
+          </div>
+
+          <h1 class="text-white text-sm font-semibold">POSTMAN</h1>
+
+          <p class="text-white text-xs leading-relaxed">
+           API testing tool used to send requests, validate responses, and ensure application functionality.
+          </p>
+        </div>
+
+        <div class="flex items-end mt-1">
+          <img src="../assets/img/postman2.png" class="h-24 w-auto">
         </div>
       </div>
 

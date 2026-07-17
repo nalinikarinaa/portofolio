@@ -451,7 +451,7 @@ import PopUp from './PopUp.vue'
         PROJECT
       </h1>
       <p class="text-white md:text-lg text-xs">A selection of projects that showcase my skills <br>
-         in building responsive and user-focused web applications.</p>
+        in web development, software testing and delivering reliable applications.</p>
   </div>
 
   <!-- weekendplan -->
@@ -909,9 +909,8 @@ import PopUp from './PopUp.vue'
                      <PopUp :visible="activePopup === 'popup2'" @close="closePopup">
                      <h2 class="md:text-lg text-md text-center text-pink font-bold">WashNJoy E-Laundry</h2>
                        <p class="mt-4 text-sm text-birutua md:text-md">
-                     
-Becoming a <strong>Fullstack Developer</strong> on the WashNJoy E-Laundry project was a valuable learning experience. I was responsible for designing the user interface (UI), developing the frontend using HTML and Tailwind CSS, designing and managing the database with SQL, and building the backend using Laravel Framework and Laravel Breeze for secure user authentication and email verification. In addition to development, I also performed <strong>manual testing</strong> to verify application functionality, validate user input, identify bugs, and ensure that each feature worked as expected before deployment. This project helped me understand both the software development process and the importance of delivering reliable, high-quality applications.
-</p>
+                      Becoming a <strong>Fullstack Developer</strong> on the WashNJoy E-Laundry project was a valuable learning experience. I was responsible for designing the user interface (UI), developing the frontend using HTML and Tailwind CSS, designing and managing the database with SQL, and building the backend using Laravel Framework and Laravel Breeze for secure user authentication and email verification. In addition to development, I also performed <strong>manual testing</strong> to verify application functionality, validate user input, identify bugs, and ensure that each feature worked as expected before deployment. This project helped me understand both the software development process and the importance of delivering reliable, high-quality applications.
+                      </p>
   <div class="items-center justify-center flex mt-8"><img src="../assets/img/washnjoy2.svg" class=" items-center w-full h-auto"> </div>
                      </PopUp>
                  </div>
